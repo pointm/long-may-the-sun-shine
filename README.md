@@ -19,7 +19,7 @@
 ### VS Code上传非常非常慢
   关闭设置左下角设置-`Use Editor As Commit Input`
 ### 部分下载加速网址
-```cmd
+
   git clone https://hub.fastgit.org/pointm/SelfSimilarFractal
 
   #只下载部分分支
@@ -29,16 +29,16 @@
   
   https://blog.csdn.net/weixin_44821644/article/details/107574297?spm=1001.2014.3001.5506
 
-```
 ### Git操作详解
-```
-Git操作详解以及在VScode中的使用 - 鬼木士的文章 - 知乎
-https://zhuanlan.zhihu.com/p/276376558
-```
+
+[Git操作详解以及在VScode中的使用 - 鬼木士的文章 - 知乎](https://zhuanlan.zhihu.com/p/276376558)
+
+
 ### 更新GitHub Personal Access Token
+[GitHub Token](https://github.com/settings/tokens)
 ```
   Create a GitHub Personal Access Token and copy the token to your clipboard 
-  https://github.com/settings/tokens
+
   Run git config --global github.accesstoken <token>, replacing <token> with the token from above.
   You can remove the --global option if you want to set the token specifically for your current project.s
 ```
