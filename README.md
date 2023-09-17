@@ -37,7 +37,8 @@ https://zhuanlan.zhihu.com/p/276376558
 ```
 ### 更新GitHub Personal Access Token
 ```
-  Create a GitHub Personal Access Token and copy the token to your clipboard https://github.com/settings/tokens
+  Create a GitHub Personal Access Token and copy the token to your clipboard 
+  https://github.com/settings/tokens
   Run git config --global github.accesstoken <token>, replacing <token> with the token from above.
   You can remove the --global option if you want to set the token specifically for your current project.s
 ```
