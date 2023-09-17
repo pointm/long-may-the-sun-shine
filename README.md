@@ -35,6 +35,7 @@
 
 
 ### 更新GitHub Personal Access Token
+一个月一次
 [GitHub Token](https://github.com/settings/tokens)
 ```
   Create a GitHub Personal Access Token and copy the token to your clipboard 
