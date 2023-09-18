@@ -35,7 +35,8 @@
 
 
 ### 更新GitHub Personal Access Token
-一个月一次
+如果输入账号密码提示错误试试把密码换成这个？
+一个月更新一次
 [GitHub Token](https://github.com/settings/tokens)
 ```
   Create a GitHub Personal Access Token and copy the token to your clipboard 
@@ -43,3 +44,8 @@
   Run git config --global github.accesstoken <token>, replacing <token> with the token from above.
   You can remove the --global option if you want to set the token specifically for your current project.s
 ```
+## 每次pull/push都要输入密码？
+- 首先进入你的git 工作目录下。
+- 在终端执行一下命令：git config --global credential.helper store
+- 然后再重新执行一次git pull,这次它还是提示你输入账号和密码，再输入密码就好了
+
