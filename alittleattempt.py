@@ -11,3 +11,4 @@ class Children(Father):
 
 f = Father()
 c = Children()
+c.__init__()
