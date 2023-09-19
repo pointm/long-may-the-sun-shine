@@ -44,7 +44,7 @@
   Run git config --global github.accesstoken <token>, replacing <token> with the token from above.
   You can remove the --global option if you want to set the token specifically for your current project.s
 ```
-## 每次pull/push都要输入密码？
+## 每次pull/push都要输入密码
 - 首先进入你的git 工作目录下。
 - 在终端执行一下命令：
 ``` 
