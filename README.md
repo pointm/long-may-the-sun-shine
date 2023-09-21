@@ -52,3 +52,7 @@
 ```
 - 然后再重新执行一次git pull,这次它还是提示你输入账号和密码，再输入密码就好了
 
+## 同步文件显示fatal: HttpRequestException encountered.
+
+因为GitHub的认证文件过期了，我们需要用新的认证文件
+[认证文件仓库地址在这里，下载Release即可](https://github.com/microsoft/Git-Credential-Manager-for-Windows/tree/v1.14.0)
