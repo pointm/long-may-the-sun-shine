@@ -1,15 +1,19 @@
 ## 这里储存我遇到过的关于GitHub的网络问题的命令
 ### 上传/克隆443
-- 将端口转化到代理服务器，注意代理后面的端口：
+- 将端口转化到梯子的代理服务器，如果一直挂着梯子的话这种设置方法更快。
+  注意代理后面的端口，应该于自己的梯子的代理端口一致，Windows11的具体的梯子的代理端口可以通过在设置页面搜索`代理服务器设置->点击手动设置代理的编辑按钮`查看：
+  命令行输入以下命令：
   ```
   git config --global http.proxy 127.0.0.1:7890
   git config --global https.proxy 127.0.0.1:7890
   ```
+如果没有梯子的话就用这种方法，取消端口代理：
 - 取消端口代理
   ``` 
   git config --global --unset http.proxy
   git config --global --unset https.proxy
   ```
+不知道自己是否设置了端口代理？命令行输入以下命令查看详细情况：
 - 查看代理窗口命令
   ```
   git config --global http.proxy #查看git的http代理配置
@@ -18,16 +22,16 @@
   ```
 ### VS Code上传非常非常慢
   关闭设置左下角设置-`Use Editor As Commit Input`
-### 部分下载加速网址
+### GitHub部分下载加速网址
 
-  git clone https://hub.fastgit.org/pointm/SelfSimilarFractal
+  - git clone https://hub.fastgit.org/pointm/SelfSimilarFractal  
 
-  #只下载部分分支
+    https://down.itsvse.com/tools/fastgit.html
+    
+    https://blog.csdn.net/weixin_44821644/article/details/107574297?spm=1001.2014.3001.5506
+
+  - 这个网址可以只下载文件中的部分分支子文件夹：
   https://www.itsvse.com/downgit/#/home
-
-  https://down.itsvse.com/tools/fastgit.html
-  
-  https://blog.csdn.net/weixin_44821644/article/details/107574297?spm=1001.2014.3001.5506
 
 ### Git操作详解
 
@@ -35,8 +39,8 @@
 
 
 ### 更新GitHub Personal Access Token
-如果输入账号密码提示错误试试把密码换成这个？
-一个月更新一次
+如果VS CODE里面编辑自己的分支仓库的时候一直输入账号密码提示错误试试把密码换成GitHub Personal Access Token？
+记得这个TOKEN 会强制一个月手动更新一次
 [GitHub Token设置地址](https://github.com/settings/tokens)
 ```
   Create a GitHub Personal Access Token and copy the token to your clipboard 
