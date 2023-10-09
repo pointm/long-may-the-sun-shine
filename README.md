@@ -1,4 +1,4 @@
-## 这里储存我遇到过的关于GitHub的网络问题的命令
+## 这里储存我遇到过的关于GitHub的网络问题的命令https://github.com/pointm/long-may-the-sun-shine/blob/develop/README.md
 ### 上传/克隆443
 - 将端口转化到梯子的代理服务器，如果一直挂着梯子的话这种设置方法更快。
   注意代理后面的端口，应该于自己的梯子的代理端口一致，Windows11的具体的梯子的代理端口可以通过在设置页面搜索`代理服务器设置->点击手动设置代理的编辑按钮`查看：
@@ -64,5 +64,7 @@
 ## ZOTERO翻译器抽风
 有时候ZOTERO的茉莉花脚本会无法正常的爬取文献，或者到了文献页面结果添加的是快照。在检查完其它的配置均没有问题的时候可以考虑修复ZOTERO的翻译器（Translators）。
 相应的翻译器仓库与下载位置：
+
 https://github.com/l0o0/translators_CN
+
 在下载并且安装完自己需要的翻译器之后记得回到浏览器的ZOTERO脚本里面更新翻译器。具体的更新方法就是邮件浏览器ZOTERO图标，选择扩展选项->Advanced->Translators把里面的`Update Translators`和`Reset Translators`都点一下，然后重启浏览器。
