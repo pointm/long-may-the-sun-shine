@@ -64,7 +64,5 @@
 ## ZOTERO翻译器抽风
 有时候ZOTERO的茉莉花脚本会无法正常的爬取文献，或者到了文献页面结果添加的是快照。在检查完其它的配置均没有问题的时候可以考虑修复ZOTERO的翻译器（Translators）。
 相应的翻译器仓库与下载位置：
-
 https://github.com/l0o0/translators_CN
-
 在下载并且安装完自己需要的翻译器之后记得回到浏览器的ZOTERO脚本里面更新翻译器。具体的更新方法就是邮件浏览器ZOTERO图标，选择扩展选项->Advanced->Translators把里面的`Update Translators`和`Reset Translators`都点一下，然后重启浏览器。
