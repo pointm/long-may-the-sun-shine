@@ -60,3 +60,7 @@
 
 因为GitHub的认证文件过期了，我们需要用新的认证文件
 [认证文件仓库地址在这里，下载Release即可](https://github.com/microsoft/Git-Credential-Manager-for-Windows/tree/v1.14.0)
+
+## ZOTERO翻译器抽风
+https://github.com/l0o0/translators_CN
+在此解决
