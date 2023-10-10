@@ -1,15 +1,19 @@
 ## 这里储存我遇到过的奇奇怪怪的网页问题
 ### 上传/克隆443
-- 将端口转化到代理服务器，注意代理后面的端口：
+- 将端口转化到梯子的代理服务器，如果一直挂着梯子的话这种设置方法更快。
+  注意代理后面的端口，应该于自己的梯子的代理端口一致，Windows11的具体的梯子的代理端口可以通过在设置页面搜索`代理服务器设置->点击手动设置代理的编辑按钮`查看：
+  命令行输入以下命令：
   ```
   git config --global http.proxy 127.0.0.1:7890
   git config --global https.proxy 127.0.0.1:7890
   ```
+如果没有梯子的话就用这种方法，取消端口代理：
 - 取消端口代理
   ``` 
   git config --global --unset http.proxy
   git config --global --unset https.proxy
   ```
+不知道自己是否设置了端口代理？命令行输入以下命令查看详细情况：
 - 查看代理窗口命令
   ```
   git config --global http.proxy #查看git的http代理配置
@@ -18,16 +22,16 @@
   ```
 ### VS Code上传非常非常慢
   关闭设置左下角设置-`Use Editor As Commit Input`
-### 部分下载加速网址
+### GitHub部分下载加速网址
 
-  git clone https://hub.fastgit.org/pointm/SelfSimilarFractal
+  - git clone https://hub.fastgit.org/pointm/SelfSimilarFractal  
 
-  #只下载部分分支
+    https://down.itsvse.com/tools/fastgit.html
+    
+    https://blog.csdn.net/weixin_44821644/article/details/107574297?spm=1001.2014.3001.5506
+
+  - 这个网址可以只下载文件中的部分分支子文件夹：
   https://www.itsvse.com/downgit/#/home
-
-  https://down.itsvse.com/tools/fastgit.html
-  
-  https://blog.csdn.net/weixin_44821644/article/details/107574297?spm=1001.2014.3001.5506
 
 ### Git操作详解
 
@@ -35,8 +39,8 @@
 
 
 ### 更新GitHub Personal Access Token
-如果输入账号密码提示错误试试把密码换成这个？
-一个月更新一次
+如果VS CODE里面编辑自己的分支仓库的时候一直输入账号密码提示错误试试把密码换成GitHub Personal Access Token？
+记得这个TOKEN 会强制一个月手动更新一次
 [GitHub Token设置地址](https://github.com/settings/tokens)
 ```
   Create a GitHub Personal Access Token and copy the token to your clipboard 
@@ -56,3 +60,9 @@
 
 因为GitHub的认证文件过期了，我们需要用新的认证文件
 [认证文件仓库地址在这里，下载Release即可](https://github.com/microsoft/Git-Credential-Manager-for-Windows/tree/v1.14.0)
+
+## ZOTERO翻译器抽风
+有时候ZOTERO的茉莉花脚本会无法正常的爬取文献，或者到了文献页面结果添加的是快照。在检查完其它的配置均没有问题的时候可以考虑修复ZOTERO的翻译器（Translators）。
+相应的翻译器仓库与下载位置：
+https://github.com/l0o0/translators_CN
+在下载并且安装完自己需要的翻译器之后记得回到浏览器的ZOTERO脚本里面更新翻译器。具体的更新方法就是邮件浏览器ZOTERO图标，选择扩展选项->Advanced->Translators把里面的`Update Translators`和`Reset Translators`都点一下，然后重启浏览器。
