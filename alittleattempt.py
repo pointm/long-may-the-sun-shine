@@ -4,9 +4,10 @@ import numpy as np
 
 
 class Father():
-    def __init__(self):
-        self.hw()
-        return
+    def __init__(self, a):
+        # self.hw()
+        print(a)
+        pass
 
     def hw(self):
         print('HalloWorld')
@@ -22,4 +23,6 @@ class Children(Father):
 # c.__init__()
 
 if __name__ == '__main__':
-    print('HalloWorld')
+    # print('HalloWorld')
+    f = Father('114514')
+    f.__init__(55644)
