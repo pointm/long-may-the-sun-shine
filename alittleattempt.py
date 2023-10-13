@@ -24,5 +24,6 @@ class Children(Father):
 
 if __name__ == '__main__':
     # print('HalloWorld')
-    f = Father('114514')
-    f.__init__(55644)
+    # f = Father('114514')
+    # f.__init__(55644)
+    c = Children(123)
