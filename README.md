@@ -73,3 +73,11 @@ git config --global github.accesstoken <输入你的token，记得删掉尖括�
 https://github.com/l0o0/translators_CN
 
 在下载并且安装完自己需要的翻译器之后记得回到浏览器的ZOTERO脚本里面更新翻译器。具体的更新方法就是邮件浏览器ZOTERO图标，选择扩展选项->Advanced->Translators把里面的`Update Translators`和`Reset Translators`都点一下，然后重启浏览器。
+
+## python使用清华源进行下载的方法
+[参考网址在这里](https://zhuanlan.zhihu.com/p/129866307)
+
+具体的指令的话：
+```python
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
