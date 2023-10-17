@@ -79,5 +79,5 @@ https://github.com/l0o0/translators_CN
 
 具体的指令的话：
 ```python
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install <你的准备提交的东西> -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
