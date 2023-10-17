@@ -41,6 +41,11 @@
 ### 更新GitHub Personal Access Token
 如果VS CODE里面编辑自己的分支仓库的时候一直输入账号密码提示错误试试把密码换成GitHub Personal Access Token？
 记得这个TOKEN 会强制一个月手动更新一次
+
+Token更新方法，安装好git后命令行输入：
+```
+git config --global github.accesstoken <输入你的token，记得删掉尖括号>
+```
 [GitHub Token设置地址](https://github.com/settings/tokens)
 ```
   Create a GitHub Personal Access Token and copy the token to your clipboard 
