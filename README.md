@@ -83,3 +83,7 @@ pip install <你的准备提交的东西> -i https://pypi.tuna.tsinghua.edu.cn/s
 ```
 ## python 如何无损耗的将字符串转化为浮点数或者长浮点数？
 [转换方法在此](https://www.delftstack.com/zh/howto/python/how-to-convert-string-to-float-or-int/#%E5%9C%A8-python-%E4%B8%AD%E9%80%9A%E8%BF%87-astliteral_eval-%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E4%B8%BA-float-%E6%88%96-int)
+
+## matplotlib 如何正确的显示中文
+[正确的显示中文的方法](https://zhuanlan.zhihu.com/p/345605782)
+[附赠Consolas-with-Yahei仓库](https://github.com/crvdgc/Consolas-with-Yahei/tree/master)
