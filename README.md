@@ -1,4 +1,4 @@
-## 这里储存我遇到过的奇奇怪怪的网页问题
+## 这里储存我遇到过的奇奇怪怪的问题
 ### 上传/克隆443
 - 将端口转化到梯子的代理服务器，如果一直挂着梯子的话这种设置方法更快。
   注意代理后面的端口，应该于自己的梯子的代理端口一致，Windows11的具体的梯子的代理端口可以通过在设置页面搜索`代理服务器设置->点击手动设置代理的编辑按钮`查看：
@@ -88,3 +88,13 @@ pip install <你的准备提交的东西> -i https://pypi.tuna.tsinghua.edu.cn/s
 [正确的显示中文的方法](https://zhuanlan.zhihu.com/p/345605782)
 
 [附赠Consolas-with-Yahei仓库](https://github.com/crvdgc/Consolas-with-Yahei/tree/master)
+
+## py如何引用上级目录中的文件
+[在这里哦](https://zhuanlan.zhihu.com/p/64893308)
+要导入上级目录下模块，可以使用sys.path： 　
+
+```python
+import sys 
+sys.path.append("..") 
+import xxx
+```
