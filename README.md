@@ -89,6 +89,8 @@ pip install <你的准备提交的东西> -i https://pypi.tuna.tsinghua.edu.cn/s
 
 [附赠Consolas-with-Yahei仓库](https://github.com/crvdgc/Consolas-with-Yahei/tree/master)
 
+[如何刷新matplotlib里面的字体缓存文件?](https://blog.csdn.net/qq_57313910/article/details/126733257)
+
 ## py如何引用上级目录中的文件
 ```python
 # 获取当前文件的上级目录
