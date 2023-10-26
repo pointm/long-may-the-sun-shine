@@ -83,6 +83,7 @@ pip install <你的准备提交的东西> -i https://pypi.tuna.tsinghua.edu.cn/s
 ```
 ## python 如何无损耗的将字符串转化为浮点数或者长浮点数？
 [转换方法在此](https://www.delftstack.com/zh/howto/python/how-to-convert-string-to-float-or-int/#%E5%9C%A8-python-%E4%B8%AD%E9%80%9A%E8%BF%87-astliteral_eval-%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E4%B8%BA-float-%E6%88%96-int)
+`ast.literal_eval(string) `安全地评估包含 `Python` 表达式的给定字符串。它可以将字符串自动地转换为 `float` 或 `int`。
 
 ## matplotlib 如何正确的显示中文
 [正确的显示中文的方法](https://zhuanlan.zhihu.com/p/345605782)
@@ -90,7 +91,14 @@ pip install <你的准备提交的东西> -i https://pypi.tuna.tsinghua.edu.cn/s
 [附赠Consolas-with-Yahei仓库](https://github.com/crvdgc/Consolas-with-Yahei/tree/master)
 
 [如何刷新matplotlib里面的字体缓存文件?](https://blog.csdn.net/qq_57313910/article/details/126733257)
-具体代码：
+具体方法就是找到我想要的字体文件，加入matplotlib的字体库
+```python
+import matplotlib
+print(matplotlib.matplotlib_fname()) # 字体库路径    
+```
+之后将配置文件的取消`font.family`的注释，并在`font.sans-serif`中添加自己想要的字体名称部分注释给去掉，最后将自己想要的字体添加到字体库里面。
+
+最后记得清空matplotlib的缓存文件，具体代码：
 ```python
 import shutil
 import matplotlib
