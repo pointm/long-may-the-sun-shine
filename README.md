@@ -90,11 +90,13 @@ pip install <你的准备提交的东西> -i https://pypi.tuna.tsinghua.edu.cn/s
 [附赠Consolas-with-Yahei仓库](https://github.com/crvdgc/Consolas-with-Yahei/tree/master)
 
 ## py如何引用上级目录中的文件
-[在这里哦](https://zhuanlan.zhihu.com/p/64893308)
-要导入上级目录下模块，可以使用sys.path： 　
-
 ```python
-import sys 
-sys.path.append("..") 
-import xxx
+# 获取当前文件的上级目录
+parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# 将上级目录添加到sys.path中
+sys.path.append(parent_dir)
+
+# 现在你可以导入上级目录下的模块了
+from Modeling import *
 ```
