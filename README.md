@@ -1,5 +1,6 @@
 ## 杰哥，这是什么啊？
 - [是叩踢匹歪伊尼秀哦](https://www.w3schools.cn/pyqt5/pyqt5_hello_world.html)
+- [正在看的B站的教程](https://b23.tv/ZNrOgmu)
 - [菜鸟-如何使用QtDesiner?](https://www.w3schools.cn/pyqt5/pyqt5_using_qt_designer.html)
 - [菜鸟-信号与插槽](https://www.w3schools.cn/pyqt5/pyqt5_signals_and_slots.html)
 - [Q&A-我已经在QtDesigner里面重新设计了自己的槽函数，我该怎么添加这个函数呢?](https://blog.csdn.net/zhaochongsi/article/details/108642031)
