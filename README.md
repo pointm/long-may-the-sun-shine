@@ -116,3 +116,24 @@ sys.path.append(parent_dir)
 # 现在你可以导入上级目录下的模块了
 from Modeling import *
 ```
+
+## python 安装路径与pip路径
+cmd里面直接输入即可。展示python安装路径
+```cmd
+where python
+```
+展示pip了多少包，以及展示安装包的位置：
+```
+pip list
+```
+
+## conda基本问题
+[常用conda命令合集](https://zhuanlan.zhihu.com/p/363904808)
+```python
+conda create -n environment_name python=3.11.5 #创建conda环境
+conda activate environment_name # 进入环境	
+conda deactivate # 退出环境	
+conda remove -n yourname --all # 删除环境	 
+conda env list / conda info -e # 列出环境	
+conda create --name new_env_name --clone old_env_name # 复制环境	
+```
