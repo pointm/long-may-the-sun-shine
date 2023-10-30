@@ -117,7 +117,7 @@ sys.path.append(parent_dir)
 from Modeling import *
 ```
 
-## python 安装路径与pip路径
+## python 安装路径与pip路径以及如何完全卸载
 cmd里面直接输入即可。展示python安装路径
 ```cmd
 where python
