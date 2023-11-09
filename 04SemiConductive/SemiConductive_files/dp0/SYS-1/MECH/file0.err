@@ -1,0 +1,11 @@
+/COM,ANSYS RELEASE 2022 R1           BUILD 22.1      UP20211129       20:48:19
+
+ *** WARNING ***                         CP =       0.047   TIME= 20:48:20
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.156   TIME= 20:48:20
+ Contact element 1810 (real ID 3) has too much sliding distance          
+ 1.10480712 relative to target element 2087.  Switch to finite or        
+ instant small sliding logic (KEYOPT(18)=0,2) to better represent this   
+ situation if desired.                                                   
