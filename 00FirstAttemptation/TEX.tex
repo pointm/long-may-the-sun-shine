@@ -134,8 +134,56 @@ $$
     =N \ln N - \sum_{i} a_i \ln \left( \frac{a_i}{\omega_i} \right)
 \end{equation*}
 
+\begin{equation}
+    \mathbf{E}(\mathbf{r}) = \frac{\mathbf{F}(\mathbf{r})}{q_0} = \frac{1}{4\pi\epsilon_0} \frac{q}{r^2} \mathbf{\hat{u}}. \tag{I-2}
+\end{equation}
 
+\begin{equation}
+    \mathbf{E}(\mathbf{r}) = \frac{1}{4\pi\epsilon_0} \sum_{l=1}^N \frac{q_l}{|\mathbf{r} - \mathbf{r}_l|^2} \mathbf{\hat{u}}_l. \tag{I-4}
+\end{equation}
 
+当然，以下是使用Markdown和LaTeX格式的答案：
+
+这个问题要求证明向量函数的场线 \(y = y(x)\) 是一个微分方程的解。具体来说，需要展示 \(F(x, y) = iF_x(x, y) + jF_y(x, y)\) 是微分方程 \(\frac{dy}{dx} = \frac{F_y(x, y)}{F_x(x, y)}\) 的解。
+
+这个问题的解决方法是使用链式法则。链式法则是微积分中的一个基本法则，它描述了复合函数的导数。在这个问题中，我们可以将 \(F(x, y)\) 看作是 \(x\) 和 \(y(x)\) 的函数，然后应用链式法则。
+
+首先，我们计算 \(F(x, y)\) 的全导数：
+
+$$
+    dF = \frac{\partial F}{\partial x} dx + \frac{\partial F}{\partial y} dy
+$$
+
+这里，\(\frac{\partial F}{\partial x}\) 和 \(\frac{\partial F}{\partial y}\) 分别是 \(F\) 关于 \(x\) 和 \(y\) 的偏导数，它们分别等于 \(F_x(x, y)\) 和 \(F_y(x, y)\)。
+
+然后，我们将 \(dy\) 表示为 \(dx\) 的函数：
+
+$$
+    dy = \frac{dy}{dx} dx
+$$
+
+将这个表达式代入 \(dF\) 的表达式，我们得到：
+
+$$
+    dF = F_x dx + F_y \frac{dy}{dx} dx
+$$
+
+由于 \(dF = 0\)（因为 \(F(x, y)\) 是常数），我们可以得到：
+
+$$
+    F_x + F_y \frac{dy}{dx} = 0
+$$
+
+从这个等式中解出 \(\frac{dy}{dx}\)，我们得到：
+
+$$
+    \frac{dy}{dx} = -\frac{F_x}{F_y}
+$$
+
+这就证明了向量函数的场线 \(y = y(x)\) 是微分方程 \(\frac{dy}{dx} = \frac{F_y(x, y)}{F_x(x, y)}\) 的解。这是因为向量函数的场线的斜率在每一点上都等于该点的 \(F_y/F_x\)。这就是这个问题的解答。希望这个解答对你有所帮助！
+\begin{equation}
+    \iint_{S} \mathbf{E} \cdot \hat{\mathbf{n}} \, dS = \frac{q}{\varepsilon_0} \tag{II-1}
+\end{equation}
 
 \end{document}
 
