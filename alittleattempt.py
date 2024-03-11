@@ -27,3 +27,35 @@ if __name__ == '__main__':
     # f = Father('114514')
     # f.__init__(55644)
     c = Children(123)
+
+
+class Rectangular:
+    def __init__(self, LongSideLength, ShortSideLength):
+        self.a = LongSideLength
+        self.b = ShortSideLength
+        self.area = self.a * self.b
+
+
+rec1 = Rectangular(11, 8)
+pass
+rec2 = Rectangular(20, 6)
+pass
+
+
+class Rectangular:
+    a = 1
+    b = 1
+    area = 1
+
+    def init(self, LongSideLength, ShortSideLength):
+        self.a = LongSideLength
+        self.b = ShortSideLength
+        self.area = self.a * self.b
+        return self
+
+
+rectest = Rectangular()
+rec1 = rectest.init(11, 8)
+pass
+rec2 = rectest.init(20, 6)
+pass
