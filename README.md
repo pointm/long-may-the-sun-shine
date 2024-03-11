@@ -173,7 +173,7 @@ rec1 = Rectangular(11, 8)
 rec2 = Rectangular(20, 6)
 ```
 我们会发现这样子初始化之后的类，`rec2`的参数跟`rec1`的参数是完全不一样的，改变`rec2`并不会影响`rec1`
-但是我们现在又有了一个新的问题，`__init__`是完全无法返回任何的数字或者东西的，它只负责在实例化类的时候对类进行初始化，在完成初始化工作之后不会对原先的类做任何的改变，也不会返回任何的数值。如果我们想要把这个实例化的特例留下来的话，我们需要在原先的类里面另外新建一个方法来返回它自己，并且调用这个方法来重新访问这个实例化的特例就如这样子：
+我们现在知道，`__init__`会直接返回这个实例本身，并不需要其它的方法来对类进行进一步的返回操作，现在的代码可以被写作：
 ```python
 class Rectangular:
     def __init__(self, LongSideLength, ShortSideLength):
@@ -181,11 +181,8 @@ class Rectangular:
         self.b = ShortSideLength
         self.area = self.a * self.b
 
-    def returnmyself(self):
-        return self
-
 
 rec1 = Rectangular(11, 8).returnmyself()
 rec2 = Rectangular(rec1.a, 12)
 ```
-我们在创建rec2的时候就能调用rec1的参数了（智将）
+我们在创建`rec2`的时候就能调用`rec1`的参数了，也就是说这个矩形`rec2`的长边和`rec1`的长边是完全相同的（智将）

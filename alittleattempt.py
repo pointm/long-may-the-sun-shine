@@ -35,11 +35,8 @@ class Rectangular:
         self.b = ShortSideLength
         self.area = self.a * self.b
 
-    def returnmyself(self):
-        return self
 
-
-rec1 = Rectangular(11, 8).returnmyself()
+rec1 = Rectangular(11, 8)
 rec2 = Rectangular(rec1.a, 12)
 
 rec1 = Rectangular(11, 8)
