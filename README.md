@@ -139,3 +139,53 @@ conda remove -n yourname --all # 删除环境
 conda env list / conda info -e # 列出环境	
 conda create --name new_env_name --clone old_env_name # 复制环境	
 ```
+
+## 关于python类的初始化
+`python`对于类，有自己的初始化方法`__init__`。相比于自己定义一个初始化类，这个方法初始化的类的特点是，其被实例化初始化后，实例化之后的类之间不会发生互相干扰的情况。下面以一个例子来对这个初始化方法进行简要的介绍。
+```python
+class Rectangular:
+    a = 1
+    b = 1
+    area = 1
+
+    def init(self, LongSideLength, ShortSideLength):
+        self.a = LongSideLength
+        self.b = ShortSideLength
+        self.area = self.a * self.b
+        return self
+
+
+rectest = Rectangular()
+rec1 = rectest.init(11, 8)
+rec2 = rectest.init(20, 6)
+```
+这一段我们定义了一个矩形相关的类，其储存了三个属性，分别是矩形的长边、短边和面积。而面积这个属性是由长边与短边做乘法而得到的。代码最开始针对这个类进行了实例化，之后分别有两个不同的实例化后的类进行了不同的初始化。在我们运行所有的代码之后，我们会发现原先的`rec1`的属性变得跟`rec2`的属性完全相同。因为两个类的名字其实指向的是同一个实例化 的类。这样子的话改变其中的某一个另外所有的类都会发生变化。
+我们现在使用预设的`__init__`这个方法来对原先的矩形进行初始化：
+```python
+class Rectangular:
+    def __init__(self, LongSideLength, ShortSideLength):
+        self.a = LongSideLength
+        self.b = ShortSideLength
+        self.area = self.a * self.b
+
+
+rec1 = Rectangular(11, 8)
+rec2 = Rectangular(20, 6)
+```
+我们会发现这样子初始化之后的类，`rec2`的参数跟`rec1`的参数是完全不一样的，改变`rec2`并不会影响`rec1`
+但是我们现在又有了一个新的问题，`__init__`是完全无法返回任何的数字或者东西的，它只负责在实例化类的时候对类进行初始化，在完成初始化工作之后不会对原先的类做任何的改变，也不会返回任何的数值。如果我们想要把这个实例化的特例留下来的话，我们需要在原先的类里面另外新建一个方法来返回它自己，并且调用这个方法来重新访问这个实例化的特例就如这样子：
+```python
+class Rectangular:
+    def __init__(self, LongSideLength, ShortSideLength):
+        self.a = LongSideLength
+        self.b = ShortSideLength
+        self.area = self.a * self.b
+
+    def returnmyself(self):
+        return self
+
+
+rec1 = Rectangular(11, 8).returnmyself()
+rec2 = Rectangular(rec1.a, 12)
+```
+我们在创建rec2的时候就能调用rec1的参数了（智将）

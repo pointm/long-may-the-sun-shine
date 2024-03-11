@@ -3,26 +3,26 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-class Father():
+class Father:
     def __init__(self, a):
         # self.hw()
         print(a)
         pass
 
     def hw(self):
-        print('HalloWorld')
+        print("HalloWorld")
 
 
 class Children(Father):
     def hw(self):
-        print('No')
+        print("No")
 
 
 # f = Father()
 # c = Children()
 # c.__init__()
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # print('HalloWorld')
     # f = Father('114514')
     # f.__init__(55644)
@@ -35,6 +35,12 @@ class Rectangular:
         self.b = ShortSideLength
         self.area = self.a * self.b
 
+    def returnmyself(self):
+        return self
+
+
+rec1 = Rectangular(11, 8).returnmyself()
+rec2 = Rectangular(rec1.a, 12)
 
 rec1 = Rectangular(11, 8)
 pass
