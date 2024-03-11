@@ -173,7 +173,7 @@ rec1 = Rectangular(11, 8)
 rec2 = Rectangular(20, 6)
 ```
 我们会发现这样子初始化之后的类，`rec2`的参数跟`rec1`的参数是完全不一样的，改变`rec2`并不会影响`rec1`
-我们现在知道，`__init__`会直接返回这个实例本身，并不需要其它的方法来对类进行进一步的返回操作，现在的代码可以被写作：
+我们现在知道，`__init__`会直接返回这个实例化的对象本身，并不需要其它的方法来对类进行进一步的返回操作，现在的代码可以被写作：
 ```python
 class Rectangular:
     def __init__(self, LongSideLength, ShortSideLength):
