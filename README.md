@@ -186,3 +186,29 @@ rec1 = Rectangular(11, 8).returnmyself()
 rec2 = Rectangular(rec1.a, 12)
 ```
 我们在创建`rec2`的时候就能调用`rec1`的参数了，也就是说这个矩形`rec2`的长边和`rec1`的长边是完全相同的（智将）
+## 关于python的`.copy`方法和直接赋值的区别
+- 当你使用`.copy()`方法时，你创建的是原字典的**浅拷贝**。这意味着，如果你修改了新字典中的一个可变对象，那么在原字典中的相应对象也会被修改。但是，**如果你向新字典添加、删除或修改一个键值对，这个改变不会影响到原字典。**
+
+- 当你直接赋值时，你实际上只是创建了一个新的引用，而不是一个新的对象。这意味着，两个字典变量实际上指向的是同一个字典，所以对任何一个字典的修改都会影响到另一个字典。
+
+```python
+# 使用dict.copy()创建浅拷贝
+dict1 = {"key": ["value"]}
+dict2 = dict1.copy()
+dict2["key"].append("value2")  # 修改新字典中的列表
+print(dict1)  # 输出：{'key': ['value', 'value2']}
+dict2["new_key"] = "new_value"  # 向新字典添加一个键值对
+print(dict1)  # 输出：{'key': ['value', 'value2']}，并没有"new_key"
+
+# 直接赋值创建引用
+dict3 = {"key": ["value"]}
+dict4 = dict3
+dict4["key"].append("value2")  # 修改新字典中的列表
+print(dict3)  # 输出：{'key': ['value', 'value2']}
+dict4["new_key"] = "new_value"  # 向新字典添加一个键值对
+print(dict3)  # 输出：{'key': ['value', 'value2'], 'new_key': 'new_value'}，有"new_key"
+```
+
+在这个例子中，你可以看到，使用`.copy()`方法和直接赋值得到的结果是不同的。
+
+深拷贝可以使用`.deepcopy()`，对副本的影响完全不会影响到原本。
