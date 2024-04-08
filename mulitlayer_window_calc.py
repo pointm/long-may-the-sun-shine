@@ -3,6 +3,8 @@
 import numpy as np
 from math import pi
 from numpy import exp, sqrt
+import matplotlib as mpl
+import matplotlib.pyplot as plt
 
 
 def kc(a, b, m, n):
@@ -61,7 +63,7 @@ def transfer_matrix_p(
 
 
 if __name__ == "__main__":
-    freq = 35 * 10**9
+    freqlist = np.linspace(25, 45, 1000, endpoint=True) * 10**9
     a = 7.11 * 10**-3
     b = 3.555 * 10**-3
     m = 1
@@ -69,7 +71,7 @@ if __name__ == "__main__":
     epsilon = [1, 2.7, 9, 2.7, 1]
     N = len(epsilon)
     miu = np.ones(N)
-    thickness = [999, 1.35 * 10**-3, 0.75 * 10**-3, 1.35 * 10**-3, 999]
+    thickness = [99, 1.35 * 10**-3, 0.75 * 10**-3, 1.35 * 10**-3, 99]
     # thickness = [
     #     2.68 * 10**-3,
     #     1.35 * 10**-3,
@@ -81,16 +83,22 @@ if __name__ == "__main__":
     k_cutoff = kc(
         a, b, m, n
     )  # 计算TE10模式下的波导截止波数，并不是截止频率，截至频率要用c*kc/(2*pi)
-    kps = []  # 计算每个介质下的波数
-    for index, eps in enumerate(epsilon):
-        kps.append(kp(freq, eps, miu[index], k_cutoff))
-    M_total = np.array([[1, 0], [0, 1]])
-    for var in range(N - 1):
-        M_total = np.dot(
-            transfer_matrix_p(
-                freq, k_cutoff, thickness[var], epsilon[var], 1, epsilon[var + 1], 1
-            ),
-            M_total,
-        )
+    M11list = []
+    for freq in freqlist:
+        kps = []  # 计算每个介质下的波数
+        for index, eps in enumerate(epsilon):
+            kps.append(kp(freq, eps, miu[index], k_cutoff))
+        M_total = np.array([[1, 0], [0, 1]])
+        for var in range(N - 1):
+            M_total = np.dot(
+                transfer_matrix_p(
+                    freq, k_cutoff, thickness[var], epsilon[var], 1, epsilon[var + 1], 1
+                ),
+                M_total,
+            )
+        M11 = M_total[0, 0]
+        M11list.append(10 * np.log10(epsilon[4] * np.abs(M11) ** 2))
 
+    plt.plot(freqlist, M11list)
+    plt.show()
 pass
