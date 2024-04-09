@@ -52,14 +52,15 @@ def transfer_matrix_p(
     # M1 第p层传输矩阵的最左边的矩阵，后面的M2、M3依次是中间的矩阵和最右边的矩阵
     k_p = kp(frequency, epsilon_p, miu_p, kc)
     k_p1 = kp(frequency, epsilon_p1, miu_p1, kc)
-    rela_miu = miu_p / miu_p
+    rela_miu = miu_p / miu_p1
     rela_k = k_p / k_p1
     M1 = np.array([[exp(complex(0, k_p1 * z_p)), 0], [0, exp(complex(0, -k_p1 * z_p))]])
     M2 = np.array(
         [[rela_miu + rela_k, rela_miu - rela_k], [rela_miu - rela_k, rela_miu + rela_k]]
     )
     M3 = np.array([[exp(complex(0, -k_p * z_p)), 0], [0, exp(complex(0, k_p * z_p))]])
-    return 0.5 * M1 * M2 * M3
+
+    return 0.5 * np.dot(M1, np.dot(M2, M3))
 
 
 if __name__ == "__main__":
@@ -71,24 +72,17 @@ if __name__ == "__main__":
     epsilon = [1, 2.7, 9, 2.7, 1]
     N = len(epsilon)
     miu = np.ones(N)
-    thickness = [99, 1.35 * 10**-3, 0.75 * 10**-3, 1.35 * 10**-3, 99]
-    # thickness = [
-    #     2.68 * 10**-3,
-    #     1.35 * 10**-3,
-    #     0.75 * 10**-3,
-    #     1.35 * 10**-3,
-    #     2.68 * 10**-3,
-    # ]
+    thickness = [9, 1.35 * 10**-3, 0.75 * 10**-3, 1.35 * 10**-3, 9]
 
     k_cutoff = kc(
         a, b, m, n
     )  # 计算TE10模式下的波导截止波数，并不是截止频率，截至频率要用c*kc/(2*pi)
     M11list = []
     for freq in freqlist:
+        M_total = np.array([[1, 0], [0, 1]])  # 传输矩阵初始化
         kps = []  # 计算每个介质下的波数
         for index, eps in enumerate(epsilon):
             kps.append(kp(freq, eps, miu[index], k_cutoff))
-        M_total = np.array([[1, 0], [0, 1]])
         for var in range(N - 1):
             M_total = np.dot(
                 transfer_matrix_p(
@@ -96,8 +90,9 @@ if __name__ == "__main__":
                 ),
                 M_total,
             )
-        M11 = M_total[0, 0]
-        M11list.append(10 * np.log10(epsilon[4] * np.abs(M11) ** 2))
+        M21 = M_total[1, 0]
+        M22 = M_total[1, 1]
+        M11list.append(10 * np.log10(np.abs(M21 / M22) ** 2))
 
     plt.plot(freqlist, M11list)
     plt.show()
