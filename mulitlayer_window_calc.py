@@ -60,7 +60,7 @@ def transfer_matrix_p(
     )
     M3 = np.array([[exp(complex(0, -k_p * z_p)), 0], [0, exp(complex(0, k_p * z_p))]])
 
-    return 0.5 * np.dot(M1, np.dot(M2, M3))
+    return 0.5 * np.linalg.multi_dot([M1, M2, M3])
 
 
 if __name__ == "__main__":
