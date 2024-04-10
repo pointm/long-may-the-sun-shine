@@ -64,18 +64,20 @@ def transfer_matrix_p(
 
 
 if __name__ == "__main__":
-    freqlist = np.linspace(25, 45, 2500, endpoint=True) * 10**9
+    ifmatrix = False
+    freqlist = np.linspace(25, 45, 1500, endpoint=True) * 10**9
     # freq = 35 * 10**9
     a = 7.11 * 10**-3
     b = 3.555 * 10**-3
     m = 1
     n = 0
     epsilon = [1, 2.7, 9, 2.7, 1]
-    # epsilon = [1, 1, 1, 1, 1] # 测试用，看看匀质情况下传输矩阵对不对
+    # epsilon = [1, 3.8, 16, 3.8, 1]
+    # epsilon = [1, 1, 1, 1, 1]  # 测试用，看看匀质情况下传输矩阵对不对
     N = len(epsilon)
     miu = np.ones(N)
-    thickness = [99, 1.35 * 10**-3, 0.75 * 10**-3, 1.35 * 10**-3, 99]
-    # thickness = [99, 1.12 * 10**-3, 0.52 * 10**-3, 1.12 * 10**-3, 99]
+    thickness = [9, 1.35 * 10**-3, 0.75 * 10**-3, 1.35 * 10**-3, 9]
+    # thickness = [9, 1.12 * 10**-3, 0.52 * 10**-3, 1.12 * 10**-3, 9]
 
     k_cutoff = kc(
         a, b, m, n
@@ -84,28 +86,57 @@ if __name__ == "__main__":
     s21list = []
     convlist = []
     for freq in freqlist:
-        M_total = np.array([[1, 0], [0, 1]])  # 传输矩阵初始化
-        kps = []  # 计算每个介质下的波数
-        for index, eps in enumerate(epsilon):
-            kps.append(kp(freq, eps, miu[index], k_cutoff))
-        for var in range(N - 1):
-            M_total = np.dot(
-                transfer_matrix_p(
-                    freq, k_cutoff, thickness[var], epsilon[var], 1, epsilon[var + 1], 1
-                ),
-                M_total,
+        if ifmatrix == False:
+            kps = []  # 计算每个介质下的波数
+            for eps in epsilon:
+                kps.append(kp(freq, eps, 1, k_cutoff))
+            R = (
+                abs(
+                    (
+                        (kps[4] * kps[0] * kps[2] ** 2 - (kps[3] * kps[1]) ** 2)
+                        / (kps[4] * kps[0] * kps[2] ** 2 + (kps[3] * kps[1]) ** 2)
+                    )
+                )
+                ** 2
             )
-        M11 = M_total[0, 0]
-        M12 = M_total[0, 1]
-        M21 = M_total[1, 0]
-        M22 = M_total[1, 1]
-        R = abs(M21 / M22) ** 2
-        T = abs((M11 * M22 - M12 * M21) / M22) ** 2
-        TOTAL = R + T  # 你到底守不守恒?
+            T = (
+                4
+                * abs(
+                    (kps[0] * kps[1] * kps[2] * kps[3])
+                    / (kps[0] * kps[4] * kps[2] ** 2 + (kps[1] * kps[3]) ** 2)
+                )
+                ** 2
+            )
+            TOTAL = R + T
+        if ifmatrix == True:
+            M_total = np.array([[1, 0], [0, 1]])  # 传输矩阵初始化
+            for var in range(N - 1):
+                M_total = np.dot(
+                    transfer_matrix_p(
+                        freq,
+                        k_cutoff,
+                        thickness[var],
+                        epsilon[var],
+                        1,
+                        epsilon[var + 1],
+                        1,
+                    ),
+                    M_total,
+                )
+            M11 = M_total[0, 0]
+            M12 = M_total[0, 1]
+            M21 = M_total[1, 0]
+            M22 = M_total[1, 1]
+            R = abs(M21 / M22) ** 2
+            T = abs((M11 * M22 - M12 * M21) / M22) ** 2
+            TOTAL = R + T  # 你到底守不守恒?
 
         S11 = 10 * log10(R)
         S21 = 10 * log10(T)
         conv = 10 * log10(TOTAL)
+        # S11 = R
+        # S21 = T
+        # conv = TOTAL
         s11list.append(S11)
         s21list.append(S21)
         convlist.append(conv)
