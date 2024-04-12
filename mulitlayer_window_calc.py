@@ -64,7 +64,7 @@ def transfer_matrix_p(
 
 
 if __name__ == "__main__":
-    ifmatrix = False
+    ifmatrix = True
     freqlist = np.linspace(25, 45, 1500, endpoint=True) * 10**9
     # freq = 35 * 10**9
     a = 7.11 * 10**-3
