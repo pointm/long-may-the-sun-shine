@@ -58,7 +58,7 @@ def transfer_matrix_p(
     M2 = np.array(
         [[rela_miu + rela_k, rela_miu - rela_k], [rela_miu - rela_k, rela_miu + rela_k]]
     )
-    M3 = np.array([[exp(complex(0, -k_p * z_p)), 0], [0, exp(complex(0, k_p * z_p))]])
+    M3 = np.array([[exp(complex(0, -k_p1 * z_p)), 0], [0, exp(complex(0, k_p1 * z_p))]])
 
     return 0.5 * np.linalg.multi_dot([M1, M2, M3])
 
