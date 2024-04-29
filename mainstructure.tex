@@ -1,0 +1,184 @@
+\usepackage{ctex}
+\usepackage{geometry,graphicx,color}
+\usepackage{framed} % 引入framed宏包
+\usepackage{changepage} % 引入changepage宏包
+\usepackage[usenames, dvipsnames, svgnames]{xcolor}
+\usepackage{tikz}
+
+\usetikzlibrary{shadings}
+
+\geometry{
+    a4paper,
+    top=25.4mm, bottom=25.4mm,
+    left=20mm, right=20mm,
+    headheight=2.17cm,
+    headsep=4mm,
+    footskip=12mm
+}
+
+\usepackage{amssymb,amsmath,mathrsfs}                    % 数学字体
+\usepackage{mathpazo}% 采用 Palatino 风格字体
+\usepackage[nofontspec]{newpxtext}
+
+\definecolor{winered}{rgb}{0.5,0,0}
+\definecolor{structurecolor}{rgb}{0.8,0.92,1}
+\definecolor{main}{HTML}{3D445F}
+\definecolor{second}{HTML}{627581}
+\definecolor{third}{HTML}{9D8798}
+\definecolor{greenshade}{rgb}{0.90,1,0.92} 		% 绿色文本框，竖线颜色设为 Green
+\definecolor{redshade}{rgb}{1.00,0.88,0.88}   		% 红色文本框，竖线颜色设为 LightCoral
+\definecolor{brownshade}{rgb}{0.99,0.95,0.9} 		% 莫兰迪棕色，竖线颜色设为 BurlyWood
+\definecolor{lilacshade}{rgb}{0.95,0.93,0.98}    	% 淡紫色，竖线颜色设为 Plum
+\definecolor{orangeshade}{rgb}{1.00,0.88,0.82} 		% 橙色，竖线颜色设为 DarkOrange
+\definecolor{lightblueshade}{rgb}{0.8,0.92,1} 		% 淡蓝色，竖线颜色设为 LightSkyBlue
+\definecolor{oceanblue}{rgb}{0.8,0.92,1} 		% 淡蓝色，竖线颜色设为 LightSkyBlue
+
+% 定义引用的颜色
+\usepackage{hyperref}
+\hypersetup{colorlinks = true, linktoc=all, linkcolor=black, urlcolor=winered}
+
+% ------------------------------------------------------------%
+% 定义定理环境
+\usepackage{amsthm}
+\newtheoremstyle{defstyle}{3pt}{3pt}{\kaishu}{-3pt}{\bfseries\color{main}}{}{0.5em}{\indent 【\thmname{#1} \thmnumber{#2}】 \thmnote{(#3)}}
+\newtheoremstyle{thmstyle}{3pt}{3pt}{\kaishu}{-3pt}{\bfseries\color{second}}{}{0.5em}{\indent【\thmname{#1} \thmnumber{#2}】 \thmnote{(#3)}}
+\newtheoremstyle{prostyle}{3pt}{3pt}{\kaishu}{-3pt}{\bfseries\color{third}}{}{0.5em}{\indent【\thmname{#1} \thmnumber{#2}】 \thmnote{(#3)}}
+
+\theoremstyle{thmstyle} %theorem style
+\newtheorem{theorem}{定理}[chapter]
+\theoremstyle{defstyle} % definition style
+\newtheorem{definition}[theorem]{定义}
+\theoremstyle{prostyle} % proposition style
+\newtheorem{proposition}[theorem]{命题}
+\newtheorem{example}[theorem]{例题}
+\newtheorem{remark}[theorem]{注}
+
+\renewenvironment{proof}[1][证明]{\par\underline{\textbf{#1.}} \;\fangsong}{\qed\par}
+\newenvironment{solution}{\par\underline{\textbf{解.}} \;\kaishu}{\qed\par}
+\newcommand{\intro}[1]{\rightline{\parbox[t]{5cm}{\footnotesize \fangsong\quad\quad #1 }}}
+% ------------------------------------------------------------%
+% ------------------------------------------------------------%
+% 设置章形式
+\usepackage{titlesec, titletoc}
+\linespread{1.2}
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrule}{\color{structurecolor}\hrule width\textwidth}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{1pt}
+\fancypagestyle{plain}{\renewcommand{\headrulewidth}{0pt}\fancyhf{}\renewcommand{\headrule}{}}
+
+\fancyhead[c]{\color{structurecolor}\kaishu\rightmark}
+\fancyfoot[c]{\color{structurecolor}\small\thepage}
+
+\titleformat{\chapter}[display]
+{\Large}
+{\begin{tikzpicture}
+        \shade[left color=structurecolor,right color=white] (0,0) rectangle (\textwidth,1cm);
+        \node[align=left,anchor=west] at (0,0.5cm) {\Huge \bfseries Chapter \thechapter};
+    \end{tikzpicture}}
+{1ex}
+{\titlerule[2pt]\vspace*{1em}\Large\bfseries\filright}
+[\vspace*{1em}{\titlerule[2pt]}]
+% 定义章形式颜色
+\definecolor{sectioncolor}{RGB}{70,130,180} % 钢蓝色
+\definecolor{subsectioncolor}{RGB}{100,149,237} % 矢车菊蓝
+\definecolor{subsubsectioncolor}{RGB}{135,206,250} % 亮天蓝色
+
+\titleformat{\section}
+[frame]
+{\normalfont\color{sectioncolor}}
+{\footnotesize \enspace \large \textcolor{sectioncolor}{\S \,\thesection}\enspace}
+{6pt}
+{\Large\bfseries\filcenter}
+
+\titleformat{\subsection}
+[hang]
+{\bfseries}
+{\large\bfseries\color{subsectioncolor}\thesubsection\enspace}
+{1pt}
+{\large\bfseries\filright}
+
+\titleformat{\subsubsection}
+[hang]
+{\bfseries}
+{\large\bfseries\color{subsubsectioncolor}\thesubsubsection\enspace}
+{1pt}
+{\large\bfseries\filright}
+% ------------------------------------------------------------%
+% 设置封面
+\usepackage{titling}
+\renewcommand*{\maketitle}{
+    \begin{titlepage}
+        \newgeometry{margin = 0in}
+        \parindent=0pt
+        \includegraphics[width=\linewidth]{cover.png}
+        \vfill
+        \begin{center}
+            \parbox{0.618\textwidth}{
+                \hfill {\bfseries \Huge \thetitle} \\[0.6pt]
+                \rule{0.618\textwidth}{4pt} \\
+            }
+        \end{center}
+        \vfill
+        \begin{center}
+            \parbox{0.618\textwidth}{
+                \hfill\Large
+                \kaishu
+                \begin{tabular}{r|}
+                    作者：\theauthor \\
+                    时间：\thedate   \\
+                \end{tabular}
+            }
+        \end{center}
+        \vfill
+        \begin{center}
+            \parbox[t]{0.7\textwidth}{\centering \kaishu }
+        \end{center}
+        \vfill
+    \end{titlepage}
+    \restoregeometry
+    \thispagestyle{empty}
+}
+% ------------------------------------------------------------%
+% 设置新的线框格式
+\theoremstyle{definition}
+\newtheorem{defn}{\indent 定义}[section]
+\newtheorem{lemma}{\indent 引理}[section]
+\newtheorem{thm}[lemma]{\indent 定理}
+\newtheorem{corollary}[lemma]{\indent 推论}
+\newtheorem{criterion}[lemma]{\indent 准则}
+\newtheorem*{rmk}{\indent 注}
+\newtheorem{exercise}{\indent 例题}[section]
+
+
+\newenvironment{formal}[2][]{%
+    \def\FrameCommand{%
+        \hspace{1pt}%
+        {\color{#1}\vrule width 2pt}%
+        {\color{#2}\vrule width 4pt}%
+        \colorbox{#2}%
+    }%
+    \MakeFramed{\advance\hsize-\width\FrameRestore}%
+    \noindent\hspace{-4.55pt}%
+    \begin{adjustwidth}{}{7pt}\vspace{2pt}\vspace{2pt}}{%
+        \vspace{2pt}\end{adjustwidth}\endMakeFramed%
+}
+
+% 定义
+\newenvironment{mydefn}{\begin{formal}[Green]{greenshade}\begin{defn}}{\end{defn}\end{formal}}
+% 定理
+\newenvironment{mythm}{\begin{formal}[LightSkyBlue]{lightblueshade}\begin{thm}}{\end{thm}\end{formal}}
+% 引理
+\newenvironment{mylemma}{\begin{formal}[Plum]{lilacshade}\begin{lemma}}{\end{lemma}\end{formal}}
+% 推论
+\newenvironment{mycorollary}{\begin{formal}[BurlyWood]{brownshade}\begin{corollary}}{\end{corollary}\end{formal}}
+% 准则
+\newenvironment{mycriterion}{\begin{formal}[DarkOrange]{orangeshade}\begin{criterion}}{\end{criterion}\end{formal}}
+% 注
+\newenvironment{myrmk}{\begin{formal}[LightCoral]{redshade}\begin{rmk}}{\end{rmk}\end{formal}}
+% ------------------------------------------------------------%
+% 示例
+% 例题
+\newenvironment{myexercise}{\begin{formal}[Green]{greenshade}\begin{exercise}}{\end{exercise}\end{formal}}
+
