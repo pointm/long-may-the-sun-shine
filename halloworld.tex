@@ -1,10 +1,14 @@
 \documentclass[10pt,openany]{book}
+
 \usepackage{enumitem}
+\usepackage{amsmath,hyperref}
+\usepackage{cleveref}
+\crefname{figure}{图}{图}
 
 \input{mainstructure.tex}
 
 
-\title{\color{subsectioncolor}\textit{射频の敲门砖}\\ 
+\title{\color{subsectioncolor}射频の敲门砖\\ 
 \color{blue}\textbf{解题篇}}
 
 
@@ -48,12 +52,13 @@
       \item 34dB
     \end{enumerate}
   \end{myexercise}
+
   \begin{solution}
     根据三阶交调遮盖点的输入功率IIP3和三阶交调遮盖点的输出功率OIP3的定义，输出功率与输入功率还有增益G之间满足以下公式：
     \begin{equation*}
       P_{OIP3}( dB) =P_{IIP3} +G=20+34=54dB
     \end{equation*}
-    根据图\ref{fig:IIP3}，我们可以得知OIP3与IIP3在对数坐标里面的关系，如果忘记了具体的详细定义的话可以去微博工程第十章第10章10.2节交调失真部分查看详细的定义以及解答。
+    根据\cref{fig:IIP3}，我们可以得知OIP3与IIP3在对数坐标里面的关系，如果忘记了具体的详细定义的话可以去微博工程第十章第10章10.2节交调失真部分查看详细的定义以及解答。
     
     \clearpage % 结束当前页面并在新页面开始图片
 
@@ -63,10 +68,20 @@
       \caption{OIP3与IIP3的关系}
       \label{fig:IIP3}
     \end{figure}
-    
-    
   \end{solution}
 
+  \begin{myexercise}
+    \textbf{FDD射频链路相对于TDD射频链路的特殊核心组件是哪个？}
+    \begin{enumerate}[label=\Alph*.]
+      \item ADDA
+      \item 双工器
+      \item 功放
+      \item 低噪放
+    \end{enumerate}
+  \end{myexercise}
+  \begin{solution}
+    明天晚上再说吧
+  \end{solution}
  }
 
 \chapter{附录}
