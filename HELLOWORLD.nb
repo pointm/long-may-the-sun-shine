@@ -1,0 +1,63 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1746,         55]
+NotebookOptionsPosition[      1156,         36]
+NotebookOutlinePosition[      1579,         53]
+CellTagsIndexPosition[      1536,         50]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{"10", "\[IndentingNewLine]", 
+ RowBox[{"10", "!"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.9322555864614277`*^9, 3.9322555956464157`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"ada03e20-1006-0248-a04a-d0f23c55557a"],
+
+Cell[BoxData["10"], "Output",
+ CellChangeTimes->{3.9322555990533504`*^9},
+ CellLabel->"Out[1]=",ExpressionUUID->"e8f1f1cf-33f2-1944-a058-99f48a9b11b7"],
+
+Cell[BoxData["3628800"], "Output",
+ CellChangeTimes->{3.9322555990581684`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"fd72a22d-4abb-2941-bfe6-53a5725b404e"]
+}, Open  ]]
+},
+WindowSize->{569.25, 624.75},
+WindowMargins->{{171, Automatic}, {38.25, Automatic}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (2023\:5e7412\:670812\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"fe9e0e80-2aca-1f41-8fea-efeb1a1a8462"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 247, 3, 67, "Input",ExpressionUUID->"ada03e20-1006-0248-a04a-d0f23c55557a"],
+Cell[830, 27, 151, 2, 32, "Output",ExpressionUUID->"e8f1f1cf-33f2-1944-a058-99f48a9b11b7"],
+Cell[984, 31, 156, 2, 32, "Output",ExpressionUUID->"fd72a22d-4abb-2941-bfe6-53a5725b404e"]
+}, Open  ]]
+}
+]
+*)
+
