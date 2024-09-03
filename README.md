@@ -20,6 +20,15 @@
   git config --global https.proxy #查看git的https代理配置
   git config --global -l #查看git的所有配置
   ```
+### 初始化仓库的用户名与邮件地址
+```
+  # 配置git的全局用户名和密码
+  git config --global user.name "spurs" # spurs为用户名
+  git config --global user.email "spurs@ubuntu.com" # spurs@ubuntu.com为用户邮箱
+
+  # 生成ssh密钥
+  ssh-keygen -t rsa -C "spurs@ubuntu.com"
+```
 ### VS Code上传非常非常慢
   关闭设置左下角设置-`Use Editor As Commit Input`
 ### GitHub部分下载加速网址
