@@ -29,6 +29,7 @@
   # 生成ssh密钥
   ssh-keygen -t rsa -C "spurs@ubuntu.com"
 ```
+本次采用的文章链接在[这里](https://zhuanlan.zhihu.com/p/571015337)
 ### VS Code上传非常非常慢
   关闭设置左下角设置-`Use Editor As Commit Input`
 ### GitHub部分下载加速网址
