@@ -20,7 +20,7 @@
   git config --global https.proxy #查看git的https代理配置
   git config --global -l #查看git的所有配置
   ```
-### 初始化仓库的用户名与邮件地址
+### 初始化全局用户名和密码
 ```
   # 配置git的全局用户名和密码
   git config --global user.name "spurs" # spurs为用户名
