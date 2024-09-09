@@ -240,3 +240,13 @@ list2.append(4)
 print(list1)  # 输出：[1, 2, 3, 4]
 print(list2)  # 输出：[1, 2, 3, 4]
 ```
+
+## PARSEC的链接有问题，卡在-800
+此时选择设置里面最下面的`For advanced usage, you can edit the configuration file directly.`选项进去编辑`config.json`文件，在文件的最下面加上这样子一串代理代码，然后右键PARSEC点击RESTART就行。
+```json
+app_proxy_address =127.0.0.1
+app_proxy_scheme =http
+app_proxy=true
+app_proxy_port=7890
+```
+第一个和最后一个可以按照自己代理的端口进行自我设置。
