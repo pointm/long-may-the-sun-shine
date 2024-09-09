@@ -1,5 +1,5 @@
-## 这里储存我遇到过的奇奇怪怪的问题
-### 上传/克隆443
+# 这里储存我遇到过的奇奇怪怪的问题
+## 上传/克隆443
 - 将端口转化到梯子的代理服务器，如果一直挂着梯子的话这种设置方法更快。
   注意代理后面的端口，应该于自己的梯子的代理端口一致，Windows11的具体的梯子的代理端口可以通过在设置页面搜索`代理服务器设置->点击手动设置代理的编辑按钮`查看：
   命令行输入以下命令：
@@ -20,7 +20,7 @@
   git config --global https.proxy #查看git的https代理配置
   git config --global -l #查看git的所有配置
   ```
-### 初始化全局用户名和密码
+## 初始化全局用户名和密码
 ```
   # 配置git的全局用户名和密码
   git config --global user.name "spurs" # spurs为用户名
@@ -30,9 +30,9 @@
   ssh-keygen -t rsa -C "spurs@ubuntu.com"
 ```
 本次采用的文章链接在[这里](https://zhuanlan.zhihu.com/p/571015337)
-### VS Code上传非常非常慢
+## VS Code上传非常非常慢
   关闭设置左下角设置-`Use Editor As Commit Input`
-### GitHub部分下载加速网址
+## GitHub部分下载加速网址
 
   - git clone https://hub.fastgit.org/pointm/SelfSimilarFractal  
 
@@ -43,12 +43,12 @@
   - 这个网址可以只下载文件中的部分分支子文件夹：
   https://www.itsvse.com/downgit/#/home
 
-### Git操作详解
+## Git操作详解
 
 [Git操作详解以及在VScode中的使用 - 鬼木士的文章 - 知乎](https://zhuanlan.zhihu.com/p/276376558)
 
 
-### 更新GitHub Personal Access Token
+## 更新GitHub Personal Access Token
 如果VS CODE里面编辑自己的分支仓库的时候一直输入账号密码提示错误试试把密码换成GitHub Personal Access Token？
 记得这个TOKEN 会强制一个月手动更新一次
 
