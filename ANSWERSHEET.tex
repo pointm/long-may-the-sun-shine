@@ -1,0 +1,136 @@
+%!TEX program = xelatex
+%!TEX endoding = UTF-8 (utf8)
+\documentclass[a4paper]{article}
+\usepackage{ctex}
+\usepackage{paracol}
+\usepackage{tikz}
+\usetikzlibrary{calc,intersections,patterns,shapes.arrows,shapes.symbols,tikzmark,shapes.geometric,positioning}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{eso-pic}
+\usepackage{atbegshi}
+\geometry{%A4
+    %a4paper,
+	paperwidth=210mm, 
+	paperheight=297.1mm,
+	marginparsep=-1mm,
+	left=20mm,
+	right=20mm,
+	top=20mm,
+	bottom=29mm
+}
+\ExplSyntaxOn
+\ExplSyntaxOff
+
+% 定义一个宏命令来绘制题目部分
+\newcommand{\drawQuestions}[2]{
+    \section{#1}
+    \begin{center}
+    \begin{tikzpicture}
+    % 定义局部变量
+    \def\boxheight{-22}
+    \def\boxwidth{16.8}
+    \def\verticalspacing{4em}
+    \def\horizontalspacing{.25\linewidth}
+    \def\linelength{1.5cm}
+    % 绘制固定的矩形框
+    \draw[very thick] (0.21,0) rectangle (\boxwidth,\boxheight);
+    % 使用嵌套循环
+    \def\colomnumber{#2} % 定义每一列数字的个数
+    \foreach \j in {1, 2, 3, 4} {
+        \foreach \i in {1, 2, 3, ..., \colomnumber} {
+            \pgfmathsetmacro{\result}{\i + \colomnumber*(\j-1)}
+            \node at ({(\j-1)*\horizontalspacing + 0.5*\horizontalspacing},{\boxheight - \i*\verticalspacing + 0.5*\verticalspacing}){\pgfmathprintnumber[fixed, precision=0]{\result}.\, \underline{\hspace{\linelength}}};
+        }
+    }
+    \end{tikzpicture}
+    \end{center}
+    \newpage
+}
+
+% 定义自定义命令
+\newcommand{\simpleSection}[1]{
+    % 手动设置章节编号
+    \setcounter{section}{2}
+    % 简答题部分
+    \section{简答题}
+    \begin{tikzpicture}[overlay]
+    \draw[very thick](-1,.5)rectangle(16.8,-23.5);
+    \end{tikzpicture}
+    % 请在这里往下添加文字
+    #1
+}
+
+% 定义水印图片命令
+\newcommand\WatermarkPic{
+    \put(0,0){
+        \parbox[b][\paperheight]{\paperwidth}{
+            \vfill
+            \centering
+            \begin{tikzpicture}[remember picture,overlay]
+                \node[opacity=0.2] at (current page.center) {
+                    \includegraphics[width=0.6\paperwidth,keepaspectratio]{UESTC.png}
+                };
+            \end{tikzpicture}
+            \vfill
+        }
+    }
+}
+
+% 确保水印图片在每一页都能正确显示
+\AtBeginShipout{\AtBeginShipoutUpperLeft{\WatermarkPic}}
+\AddToShipoutPictureBG*{\WatermarkPic}
+
+\begin{document}
+
+\begin{center}
+    {\heiti\LARGE 笔试答题卡 \fangsong\large{求实求真，大气大气}}
+\end{center}
+\begin{center}
+    \LARGE{扉页的水印太深了，先把这一页空下去再谈}
+\end{center}
+
+% 扉页不编号
+\thispagestyle{empty}
+
+\newpage
+
+\begin{center}
+    {\heiti\LARGE 笔试答题卡 \fangsong\large{求实求真，大气大气}}
+\end{center}
+\setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 使用宏命令绘制选择题和填空题部分，前面是标题，后面是每一列的题目数
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\drawQuestions{选择题}{11}
+\newpage
+
+\drawQuestions{填空题}{11}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 使用宏命令绘制简答题部分，你包括在括号里面写答案就行
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\simpleSection{
+    你好我是丁真，这里是第一个简答题的答案部分。
+    \subsection{这里是第一个答案哦}
+    我的故事总是发生在夏天，炎热的气候使人们裸露的更多，也更难掩饰欲望。那时候好像永远是夏天，太阳总是有空儿伴着我，阳光充足，太亮了，使我眼前一阵阵发黑。
+    \newpage
+}
+
+\simpleSection{
+    这么快的吗？你好我依然是丁真，这里是第二道简答题
+    \subsection{清水河畔版规}
+    1、禁止无意义的纯拼音、纯数字、纯标点、纯引用；禁止短时间内多次回复相同灌水内容（大量复制粘贴），并禁止9连以上。
+
+
+    2、禁止使用发帖机，违反此规定不论发帖账号级别高低，一律处以扣水、水手之家禁言三天的处罚。屡次违反该规定者，加重处罚，直至封掉！（发贴机由管理员及站长甄别）
+
+
+    3、凡是违反规定的，此楼的所有福利不予发放，已经发放的福利予以收回并按版规处罚！
+}
+
+
+\end{document}
