@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.11)  15 SEP 2024 23:26
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.9.11)  16 SEP 2024 16:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -889,19 +889,31 @@ File: UESTC.png Graphic file (type bmp)
 
 File: UESTC.png Graphic file (type bmp)
 <UESTC.png>
-[4] (ANSWERSHEET.aux)
+[4]
+
+File: UESTC.png Graphic file (type bmp)
+<UESTC.png>
+[5]
+
+File: UESTC.png Graphic file (type bmp)
+<UESTC.png>
+[6] (ANSWERSHEET.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2022/07/14>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 20692 strings out of 409029
- 495644 string characters out of 5757959
- 1938612 words of memory out of 5000000
- 43039 multiletter control sequences out of 15000+600000
+ 20815 strings out of 409029
+ 503627 string characters out of 5757959
+ 1970612 words of memory out of 5000000
+ 43162 multiletter control sequences out of 15000+600000
  560883 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  102i,12n,111p,514b,692s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ANSWERSHEET.pdf (5 pages).
+Output written on ANSWERSHEET.pdf (7 pages).
