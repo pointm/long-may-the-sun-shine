@@ -53,11 +53,14 @@
 % 定义自定义命令
 \newcommand{\simpleSection}[1]{
     % 手动设置章节编号
-    \setcounter{section}{2}
+    \setcounter{section}{1}
     % 简答题部分
-    \section{简答题}
+    \begin{center}
+        \section*{\scalebox{2.75}{简\hspace{1.5em}答\hspace{1.5em}题}}
+    \end{center}
+    
     \begin{tikzpicture}[overlay]
-    \draw[very thick](-1,.5)rectangle(16.8,-23.5);
+    \draw[very thick](-1,.5)rectangle(16.8,-23);
     \end{tikzpicture}
     % 请在这里往下添加文字
     #1
@@ -92,23 +95,24 @@
     \LARGE{扉页的水印太深了，先把这一页空下去再谈}
 \end{center}
 
-% 扉页不编号
-\thispagestyle{empty}
+% 本文档不编号
+\pagestyle{empty}
 
 \newpage
 
 \begin{center}
-    \scalebox{1.4}{\heiti\LARGE 笔试答题卡 \fangsong\large{求实求真，大气大气}}
+    \scalebox{1.4}{\heiti\LARGE 笔试答题卡 }
+
+    \scalebox{1.8}{\fangsong\large{求\hspace{0.5em}实\hspace{0.5em}求\hspace{0.5em}真\hspace{0.5em}\hspace{0.5em}大\hspace{0.5em}气\hspace{0.5em}大\hspace{0.5em}气}}
 \end{center}
-\setcounter{page}{1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 使用宏命令绘制选择题和填空题部分，前面是标题，后面是每一列的题目数
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\generateTable{\scalebox{2.75}{\textbf{选择题}}}
+\generateTable{\scalebox{2.75}{\textbf{选\hspace{1.5em}择\hspace{1.5em}题}}}
 \newpage
 
-\generateTable{\scalebox{2.75}{\textbf{填空题}}}
+\generateTable{\scalebox{2.75}{\textbf{填\hspace{1.5em}空\hspace{1.5em}题}}}
 \newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -118,8 +122,17 @@
 \simpleSection{
     你好我是丁真，这里是第一个简答题的答案部分。
 
-    简答题部分最好是不要这个框线，不然的话，字太多的话不能做到手动分开页面，很麻烦。做出这个框子主要还是为了手写版本的着想，你看下面那个简答部分就没有文字来干扰。
+    \scalebox{2.25}{简答题部分最好是不要这个框线，不然的话}
 
+    \scalebox{2.25}{字太多不能做到自动分页。}
+
+    \scalebox{2.25}{到时候电子档直接新建一个section就行}
+
+    \scalebox{2.25}{做出这个框子主要还是为了手写版本答题着想}
+
+    \scalebox{2.25}{下面那个简答部分就没有文字干扰}
+
+    \scalebox{2.25}{很清爽}
     \subsection{这里是第一个答案哦}
     我的故事总是发生在夏天，炎热的气候使人们裸露的更多，也更难掩饰欲望。那时候好像永远是夏天，太阳总是有空儿伴着我，阳光充足，太亮了，使我眼前一阵阵发黑。
 
