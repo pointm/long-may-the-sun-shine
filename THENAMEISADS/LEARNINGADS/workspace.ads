@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="3" Version="100">
+<ADSWorkspace Revision="4" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers" />
@@ -29,5 +29,9 @@
         <Cell Name="LEARNINGADS_lib:Design1" />
         <Cell Name="LEARNINGADS_lib:Layout1" />
         <Log Name="search_history.log" />
+        <Preferences Name="ads_tlines_lay.prf" />
+        <Preferences Name="LEARNINGADS_lib_lay.prf" />
+        <Preferences Name="LEARNINGADS_lib_sch.prf" />
+        <Cell Name="LEARNINGADS_lib:TestBench_MyFilter" />
     </Workspace>
 </ADSWorkspace>

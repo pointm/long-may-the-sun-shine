@@ -1,0 +1,34 @@
+; Top Design: "LEARNINGADS_lib:TestBench_MyFilter:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="LEARNINGADS_lib:TestBench_MyFilter:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: LEARNINGADS_lib
+; Cell Name: Design1
+; View Name: schematic
+define Design1 ( P1  P2 ) 
+;parameters 
+L:L1  P1 N__6 L=308 nH tune{ 10 nH to 1500 nH by 10 nH } Noise=yes  
+L:L2  N__6 N__9 L=963.6 nH tune{ 10 nH to 1500 nH by 10 nH } Noise=yes  
+L:L3  N__9 P2 L=121.69 nH tune{ 1 nH to 150 nH by 1 nH } Noise=yes  
+C:C1  N__6 0 C=10 pF tune{ 10 pF to 1200 pF by 8 pF } 
+C:C2  N__9 0 C=75.5 pF tune{ 1 pF to 150 pF by 1 pF } 
+end Design1
+
+Design1:X1  N__1 N__0 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no CalcGroupDelay=yes GroupDelayAperture=1e-4 \
+FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0 GHz Stop=0.5 GHz Lin=101 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+Port:TermG1  N__1 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__0 0 Num=2 Z=50 Ohm Noise=yes 
