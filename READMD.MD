@@ -16,3 +16,6 @@
 ## Tutorial-5 Real Time Tuning in ADS - 如何调谐结果
 如何通过对四五个不同的参数当无敌调参大王来得到调参结果
 Tuning/调谐记得在电路层级的最高一层发起，然后再下降到子层级进行详细的调参。
+
+## torial-6_Optimization in ADS - 表达式是自己敲进去的c
+`dB(S(2,1))`的这个表达式是自己敲进去的不是直接选中的c
