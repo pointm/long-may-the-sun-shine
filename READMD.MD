@@ -18,4 +18,6 @@
 Tuning/调谐记得在电路层级的最高一层发起，然后再下降到子层级进行详细的调参。
 
 ## torial-6_Optimization in ADS - 表达式是自己敲进去的c
-`dB(S(2,1))`的这个表达式是自己敲进去的不是直接选中的c
+`dB(S(2,1))`的这个表达式是自己敲进去的不是直接选中的c。
+表达式可以在表格的纵轴部分直接查看。
+`Simulate -> Simulate Set up -> Simulation Variables Setup `里面进行变量设置的时候，选项卡要调整到`Optimization`里面进行变量设置，默认选项卡是`Tuning`，有点坑！
