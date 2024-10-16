@@ -28,3 +28,5 @@ Tuning/调谐记得在电路层级的最高一层发起，然后再下降到子�
 ## Tutorial-9:Using Vendor Library Components 
 了解ADS里面存储的实际上的一些组件，而不是理想上的组件的性能。
 这一节讲述了加了哪些组件，怎么导入库之类的方法，主要是通过`DesignKits->Unzip Design Kit..`或者`DesignKits->Manage Libraries...`添加外部导入的库文件。
+
+如果仿真时候报错的话，使用库组件的时候记得在最顶层放上`NetListInclude`组件进行仿真
