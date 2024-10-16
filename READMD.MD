@@ -21,3 +21,6 @@ Tuning/调谐记得在电路层级的最高一层发起，然后再下降到子�
 `dB(S(2,1))`的这个表达式是自己敲进去的不是直接选中的c。
 表达式可以在表格的纵轴部分直接查看。
 `Simulate -> Simulate Set up -> Simulation Variables Setup `里面进行变量设置的时候，选项卡要调整到`Optimization`里面进行变量设置，默认选项卡是`Tuning`，有点坑！
+
+## torial-8_Yield Analysis - 良品率分析
+分析器件在公差扰动的情况下的不同的性能变化
