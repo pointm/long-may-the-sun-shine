@@ -3,81 +3,15 @@ hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
     (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
 
 
-***** Simulation started at Tue Oct 15 17:51:31 2024
+***** Simulation started at Wed Oct 16 16:05:35 2024
       Running on host: "AlphaCentauri"
       In Directory: "C:\Users\Pachirisu\Documents\GithubWorkSpace\long-may-the-sun-shine\THENAMEISADS\LEARNINGADS\data"
-      Process ID: 26284
+      Process ID: 9336
 
 
-OPTIM Optim1[1] <LEARNINGADS_lib:TestBench_MyFilter:schematic>  optIter=(0->40002)
+SP SP1[1] <LEARNINGADS_lib:TestBench_MyFilter:schematic>   freq=(0 Hz->500 MHz)
 
-SP Optim1[1].SP1[0] <LEARNINGADS_lib:TestBench_MyFilter:schematic>  optIter=0  freq=(0 Hz->500 MHz)
-
-Iteration/Trial #0:
-  CurrentEF: 0.0129946446770041
-  Optimization variables:
-    Design1.C1.C = 14.9999e-12
-    Design1.C2.C = 19.2726e-12
-    Design1.L1.L = 34.1053e-09
-    Design1.L2.L = 74.8743e-09
-    Design1.L3.L = 45.1585e-09
-
-SP Optim1[1].SP1[1] <LEARNINGADS_lib:TestBench_MyFilter:schematic>  optIter=1  freq=(0 Hz->500 MHz)
-
-Iteration/Trial #1:
-  CurrentEF: 0.00521483933708382
-  Optimization variables:
-    Design1.C1.C = 17.54889702293061e-12
-    Design1.C2.C = 19.20328204804193e-12
-    Design1.L1.L = 38.13561420190505e-09
-    Design1.L2.L = 84.60490463695132e-09
-    Design1.L3.L = 41.31529206155217e-09
-
-SP Optim1[1].SP1[17] <LEARNINGADS_lib:TestBench_MyFilter:schematic>  optIter=17  freq=(0 Hz->500 MHz)
-
-Iteration/Trial #17:
-  CurrentEF: 0.00207302739753931
-  Optimization variables:
-    Design1.C1.C = 19.72830785546777e-12
-    Design1.C2.C = 19.32207856249964e-12
-    Design1.L1.L = 38.22075313521094e-09
-    Design1.L2.L = 82.48127762117858e-09
-    Design1.L3.L = 33.15593109892803e-09
-
-SP Optim1[1].SP1[20] <LEARNINGADS_lib:TestBench_MyFilter:schematic>  optIter=20  freq=(0 Hz->500 MHz)
-
-Iteration/Trial #20:
-  CurrentEF: 0.00124243167079816
-  Optimization variables:
-    Design1.C1.C = 19.11987670586362e-12
-    Design1.C2.C = 19.64810542214402e-12
-    Design1.L1.L = 44.14364404959879e-09
-    Design1.L2.L = 83.43517494526437e-09
-    Design1.L3.L = 35.4090428247856e-09
-
-SP Optim1[1].SP1[25] <LEARNINGADS_lib:TestBench_MyFilter:schematic>  optIter=25  freq=(0 Hz->500 MHz)
-
-Iteration/Trial #25:
-  CurrentEF: 0.000700304477074822
-  Optimization variables:
-    Design1.C1.C = 21.2175646891134e-12
-    Design1.C2.C = 21.54659050382479e-12
-    Design1.L1.L = 44.61852053357519e-09
-    Design1.L2.L = 79.68017834806654e-09
-    Design1.L3.L = 35.45253221556785e-09
-
-SP Optim1[1].SP1[29] <LEARNINGADS_lib:TestBench_MyFilter:schematic>  optIter=29  freq=(0 Hz->500 MHz)
-
-Iteration/Trial #29:
-  CurrentEF: 0
-  Optimization variables:
-    Design1.C1.C = 22.09415421946906e-12
-    Design1.C2.C = 21.32509039802289e-12
-    Design1.L1.L = 41.58931699103125e-09
-    Design1.L2.L = 76.3516099898297e-09
-    Design1.L3.L = 43.99037200424488e-09
-Optim1[1] reached the goals. 
 
 Resource usage:
-  Total stopwatch time     =    11.91 seconds.
+  Total stopwatch time     =     0.79 seconds.
 

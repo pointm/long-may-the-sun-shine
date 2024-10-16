@@ -1,20 +1,20 @@
 ; Top Design: "LEARNINGADS_lib:TestBench_MyFilter:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=yes TopDesignName="LEARNINGADS_lib:TestBench_MyFilter:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="LEARNINGADS_lib:TestBench_MyFilter:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 ; Library Name: LEARNINGADS_lib
 ; Cell Name: Design1
 ; View Name: schematic
 define Design1 ( P1  P2 ) 
 ;parameters 
-L:L1  P1 N__6 L=34.1053 nH tune{ 10 nH to 1500 nH by 10 nH } opt{ 10 nH to 150 nH } Noise=yes  
-L:L2  N__6 N__9 L=74.8743 nH tune{ 10 nH to 1500 nH by 10 nH } opt{ 10 nH to 150 nH } Noise=yes  
-L:L3  N__9 P2 L=45.1585 nH tune{ 1 nH to 150 nH by 1 nH } opt{ 10 nH to 150 nH } Noise=yes  
-C:C1  N__6 0 C=14.9999 pF tune{ 10 pF to 1200 pF by 8 pF } opt{ 1 pF to 25 pF } 
-C:C2  N__9 0 C=19.2726 pF tune{ 1 pF to 150 pF by 1 pF } opt{ 1 pF to 25 pF } 
+L:L1  P1 N__6 L=41.5893 nH tune{ 10 nH to 1500 nH by 10 nH } opt{ 10 nH to 150 nH } stat{ gauss +/- 2.08 nH } Noise=yes  
+L:L2  N__6 N__9 L=76.3516 nH tune{ 10 nH to 1500 nH by 10 nH } opt{ 10 nH to 150 nH } stat{ gauss +/- 3.82 nH } Noise=yes  
+L:L3  N__9 P2 L=43.9904 nH tune{ 1 nH to 150 nH by 1 nH } opt{ 10 nH to 150 nH } stat{ gauss +/- 2.2 nH } Noise=yes  
+C:C1  N__6 0 C=22.0942 pF tune{ 10 pF to 1200 pF by 8 pF } opt{ 1 pF to 25 pF } stat{ gauss +/- 1.1 pF } 
+C:C2  N__9 0 C=21.3251 pF tune{ 1 pF to 150 pF by 1 pF } opt{ 1 pF to 25 pF } stat{ gauss +/- 1.07 pF } 
 end Design1
 
-Design1:X1  N__1 N__0 
+Design1:X1  N__2 N__3 
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no CalcGroupDelay=yes GroupDelayAperture=1e-4 \
 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
@@ -30,20 +30,21 @@ OutputPlan:SP1_Output \
 
 #load "python","LinearCollapse"
 Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
-Port:TermG1  N__1 0 Num=1 Z=50 Ohm notune{ 25 Ohm to 75 Ohm by 5 Ohm } noopt{ 25 Ohm to 75 Ohm } Noise=yes 
-Port:TermG2  N__0 0 Num=2 Z=50 Ohm notune{ 25 Ohm to 75 Ohm by 5 Ohm } noopt{ 25 Ohm to 75 Ohm } Noise=yes 
+Port:TermG1  N__2 0 Num=1 Z=50 Ohm notune{ 25 Ohm to 75 Ohm by 5 Ohm } noopt{ 25 Ohm to 75 Ohm } nostat{ gauss +/- 2.5 Ohm } Noise=yes 
+Port:TermG2  N__3 0 Num=2 Z=50 Ohm notune{ 25 Ohm to 75 Ohm by 5 Ohm } noopt{ 25 Ohm to 75 Ohm } nostat{ gauss +/- 2.5 Ohm } Noise=yes 
 
-Optim:"Optim1" OptimType="random" ErrorForm="L2" SAProgressReport=0 MaxIters=40002 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="None" NormalizeGoals=yes SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=no UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=no GoalName[1]="OptimGoal2" GoalName[2]="OptimGoal1" SaveCurrentEF=no InitialTempControlMode=0 SANumTrialsPerIter=10 NumShootsPerIter=20 SATempControlAlpha=0.8 EnableCockpit=yes NormalizeError=yes SaveAllTrials=no UseAdvTermCriteria=no CostRelativeTol=1.0e-8 LimitOfContSmallImprovement=5 
+#ifndef muRataLibWeb_C
+#define muRataLibWeb_C
+; models
+#include "C:/Users/Pachirisu/Downloads/murata-lib-ads-s-mlcc-2408/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
+#endif
 
-OptimGoal:OptimGoal1 Expr="dB(S(2,1))" SimInstanceName="SP1" Weight=1 \
-IndepVar[1]="freq" \
-SpecLimitLine[1]="OptimGoal1_limit1" SpecLimitLine[2]="OptimGoal1_limit2" 
-SpecLimitLine:"OptimGoal1_limit1" Type="GreaterThan" Min=-1 Weight=1 \
-IndepVar[1]="freq" IndepMin[1]=0 IndepMax[1]=2e+08 
-SpecLimitLine:"OptimGoal1_limit2" Type="LessThan" Max=-25 Weight=1 \
-IndepVar[1]="freq" IndepMin[1]=3.5e+08 IndepMax[1]=5e+08 
-OptimGoal:OptimGoal2 Expr="dB(S(1,1))" SimInstanceName="SP1" Weight=1 \
-IndepVar[1]="freq" \
-SpecLimitLine[1]="OptimGoal2_limit1" 
-SpecLimitLine:"OptimGoal2_limit1" Type="LessThan" Max=-15 Weight=1 \
-IndepVar[1]="freq" IndepMin[1]=0 Hz IndepMax[1]=200 MHz 
+
+
+#ifndef muRataLibWeb_L
+#define muRataLibWeb_L
+; models
+#include "C:/Users/Pachirisu/Downloads/murata-lib-ads-s-ind-2406/muRataLibWeb_L_EIA_confidential/circuit/models/encode.net"
+#endif
+
+

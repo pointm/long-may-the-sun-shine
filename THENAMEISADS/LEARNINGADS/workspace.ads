@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="4" Version="100">
+<ADSWorkspace Revision="5" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers" />
@@ -33,5 +33,16 @@
         <Preferences Name="LEARNINGADS_lib_lay.prf" />
         <Preferences Name="LEARNINGADS_lib_sch.prf" />
         <Cell Name="LEARNINGADS_lib:TestBench_MyFilter" />
+        <ConfigFile Name="dds.cfg" />
+        <Data_Display Name="TestBench_MyFilter.dds" />
+        <Log Name="netlist.log" />
+        <Dataset Name="TestBench_MyFilter.ds" />
+        <Data_Files Name="TestBench_MyFilter.ds" />
+        <Data_Files Name="TestBench_MyFilter_data\logFile.txt" />
+        <Library Name="muRataLibWeb_C_tech" />
+        <Library Name="muRataLibWeb_C" />
+        <Library Name="muRataLibWeb_L_tech" />
+        <Library Name="muRataLibWeb_L" />
+        <Cell Name="LEARNINGADS_lib:Design1_Madara" />
     </Workspace>
 </ADSWorkspace>

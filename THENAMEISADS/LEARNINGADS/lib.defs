@@ -1,3 +1,5 @@
 INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
 DEFINE LEARNINGADS_lib LEARNINGADS_lib
 ASSIGN LEARNINGADS_lib libMode shared
+INCLUDE $HOME/Downloads/murata-lib-ads-s-mlcc-2408/muRataLibWeb_C_EIA_confidential/lib.defs
+INCLUDE $HOME/Downloads/murata-lib-ads-s-ind-2406/muRataLibWeb_L_EIA_confidential/lib.defs
