@@ -36,7 +36,7 @@ Port:TermG2  N__3 0 Num=2 Z=50 Ohm notune{ 25 Ohm to 75 Ohm by 5 Ohm } noopt{ 25
 #ifndef muRataLibWeb_C
 #define muRataLibWeb_C
 ; models
-#include "C:/Users/Pachirisu/Downloads/murata-lib-ads-s-mlcc-2408/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
+#include "C:/Users/Pachirisu/Documents/GithubWorkSpace/long-may-the-sun-shine/murata-lib-ads-s-mlcc-2408/muRataLibWeb_C_EIA_confidential/circuit/models/encode.net"
 #endif
 
 
@@ -44,7 +44,7 @@ Port:TermG2  N__3 0 Num=2 Z=50 Ohm notune{ 25 Ohm to 75 Ohm by 5 Ohm } noopt{ 25
 #ifndef muRataLibWeb_L
 #define muRataLibWeb_L
 ; models
-#include "C:/Users/Pachirisu/Downloads/murata-lib-ads-s-ind-2406/muRataLibWeb_L_EIA_confidential/circuit/models/encode.net"
+#include "C:/Users/Pachirisu/Documents/GithubWorkSpace/long-may-the-sun-shine/murata-lib-ads-s-ind-2406/muRataLibWeb_L_EIA_confidential/circuit/models/encode.net"
 #endif
 
 

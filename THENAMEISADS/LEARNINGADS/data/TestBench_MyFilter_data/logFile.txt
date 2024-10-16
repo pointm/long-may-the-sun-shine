@@ -3,10 +3,10 @@ hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
     (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
 
 
-***** Simulation started at Wed Oct 16 16:05:35 2024
+***** Simulation started at Wed Oct 16 17:28:55 2024
       Running on host: "AlphaCentauri"
       In Directory: "C:\Users\Pachirisu\Documents\GithubWorkSpace\long-may-the-sun-shine\THENAMEISADS\LEARNINGADS\data"
-      Process ID: 9336
+      Process ID: 19216
 
 
 SP SP1[1] <LEARNINGADS_lib:TestBench_MyFilter:schematic>   freq=(0 Hz->500 MHz)
