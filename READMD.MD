@@ -29,4 +29,15 @@ Tuning/调谐记得在电路层级的最高一层发起，然后再下降到子�
 了解ADS里面存储的实际上的一些组件，而不是理想上的组件的性能。
 这一节讲述了加了哪些组件，怎么导入库之类的方法，主要是通过`DesignKits->Unzip Design Kit..`或者`DesignKits->Manage Libraries...`添加外部导入的库文件。
 
-如果仿真时候报错的话，使用库组件的时候记得在最顶层放上`NetListInclude`组件进行仿真
+如果仿真时候报错的话，使用库组件的时候记得在最顶层放上`NetListInclude`组件进行仿真，，不同的器件厂商这个标准应该也不太一样吧。
+
+## Tutorial-12:Polymorphism/ Dynamic Model Selection
+这一部分说明了可以把一些不同的`Cell`的设计图转化到相同的`Cell`里面进行动态仿真，这样子的话就不需要再建立不同的`Cell`再进一步的在测试分支里面进行手动切换了。在相同的`Cell`里面的选择仿真小齿轮左侧的`Choose View for Simulation`即可切换视图，`Design`小方块下方会有提示的。
+
+## Tutorial-13:Working with Touchstone/S-Parameter files in ADS
+将数据S以TOUCHSTONE的格式导出到TXT里面进行保存。简单的方法是在`S-parameter`组件里面选择`SP_output`，这样子运行完成后会将`.s2p`文件保存在原先仿真文件的子文件夹`data`里面，名字就是你命名的名字。
+
+可以使用组件`SnP`(奇怪的组件名字) 来创建关于S参数的黑盒子(可以是多端口的黑盒子) ，使用现有的黑盒子来进行多端口的仿真。
+
+如果只是想要对S参数进行比较的话可以在数据查看页面点击`Tools->Data view tools...`进行数据的导入或者书写，写到不同的`Dataset`里面之后可以在图里面进行绘图。
+

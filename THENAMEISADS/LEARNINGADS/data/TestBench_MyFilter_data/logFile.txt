@@ -3,15 +3,17 @@ hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
     (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
 
 
-***** Simulation started at Wed Oct 16 17:28:55 2024
+***** Simulation started at Wed Oct 23 10:34:17 2024
       Running on host: "AlphaCentauri"
       In Directory: "C:\Users\Pachirisu\Documents\GithubWorkSpace\long-may-the-sun-shine\THENAMEISADS\LEARNINGADS\data"
-      Process ID: 19216
+      Process ID: 24080
 
+Loading Post-Processing Module SPOutput (['MyFilter_Madara.s2p', 'touchstone', 'MA'] )
 
 SP SP1[1] <LEARNINGADS_lib:TestBench_MyFilter:schematic>   freq=(0 Hz->500 MHz)
 
+Post-Processing Module 'PostProcessingModule'.process
 
 Resource usage:
-  Total stopwatch time     =     0.79 seconds.
+  Total stopwatch time     =     0.87 seconds.
 

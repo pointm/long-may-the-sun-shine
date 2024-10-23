@@ -4,14 +4,14 @@
 Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="LEARNINGADS_lib:TestBench_MyFilter:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
 ; Library Name: LEARNINGADS_lib
 ; Cell Name: Design1
-; View Name: schematic
+; View Name: schematic_Madara
 define Design1 ( P1  P2 ) 
 ;parameters 
-L:L1  P1 N__6 L=41.5893 nH tune{ 10 nH to 1500 nH by 10 nH } opt{ 10 nH to 150 nH } stat{ gauss +/- 2.08 nH } Noise=yes  
-L:L2  N__6 N__9 L=76.3516 nH tune{ 10 nH to 1500 nH by 10 nH } opt{ 10 nH to 150 nH } stat{ gauss +/- 3.82 nH } Noise=yes  
-L:L3  N__9 P2 L=43.9904 nH tune{ 1 nH to 150 nH by 1 nH } opt{ 10 nH to 150 nH } stat{ gauss +/- 2.2 nH } Noise=yes  
-C:C1  N__6 0 C=22.0942 pF tune{ 10 pF to 1200 pF by 8 pF } opt{ 1 pF to 25 pF } stat{ gauss +/- 1.1 pF } 
-C:C2  N__9 0 C=21.3251 pF tune{ 1 pF to 150 pF by 1 pF } opt{ 1 pF to 25 pF } stat{ gauss +/- 1.07 pF } 
+GJM03:C3  N__7 0 PartNumber=1411 
+GJM03:C4  N__5 0 PartNumber=1403 
+LQG15HH_02:L4  P1 N__7 PartNumber=96 
+LQG15HH_02:L5  N__7 N__5 PartNumber=108 
+LQG15HH_02:L6  N__5 P2 PartNumber=99 
 end Design1
 
 Design1:X1  N__2 N__3 
@@ -48,3 +48,9 @@ Port:TermG2  N__3 0 Num=2 Z=50 Ohm notune{ 25 Ohm to 75 Ohm by 5 Ohm } noopt{ 25
 #endif
 
 
+#load "python","PostProcessing"
+Controller Module="PostProcessing" \ 
+PostProcessingModule="SPOutput" \ 
+Argument[1] = "MyFilter_Madara.s2p" \ 
+Argument[2] = "touchstone" \ 
+Argument[3] = "MA"  
