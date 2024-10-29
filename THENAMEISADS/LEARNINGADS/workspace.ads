@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="8" Version="100">
+<ADSWorkspace Revision="18" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers" />
@@ -19,8 +19,6 @@
         <Library Name="ads_common_cmps" />
         <Library Name="ads_designs" />
         <Library Name="ads_pelib" />
-        <Library Name="ads_serdes_ref_channel" />
-        <Library Name="ads_quantum" />
         <ConfigFile Name="de_sim.cfg" />
         <ConfigFile Name="hpeesofsim.cfg" />
         <Preferences Name="layout.prf" />
@@ -45,9 +43,27 @@
         <Cell Name="LEARNINGADS_lib:Design1_Madara" />
         <Cell Name="LEARNINGADS_lib:Layout1" />
         <Cell Name="LEARNINGADS_lib:TestBench_MyFilter" />
-        <Cell Name="LEARNINGADS_lib:LNA_ATF21170" />
         <Log Name="nettrans.log" />
-        <Library Name="atf21170_lib" />
         <WrkAel Name="spice.ael" />
+        <Preferences Name="ads_datacmps_lay.prf" />
+        <Library Name="RF_Transistors" />
+        <Folder Name="LNA_ATF21170">
+            <Folder Name="PART1_DC,STABILITY_AND_BIAS_NW">
+                <Cell Name="LEARNINGADS_lib:STEP1_DCIV" />
+                <Data_Display Name="STEP1_DCIV.dds" />
+                <Cell Name="LEARNINGADS_lib:STEP2_STABILITY" />
+                <Data_Display Name="STEP2_STABILITY.dds" />
+            </Folder>
+        </Folder>
+        <Dataset Name="STEP1_DCIV.ds" />
+        <Data_Files Name="dc_annotation\%L%E%A%R%N%I%N%G%A%D%S_lib_%S%T%E%P1_%D%C%I%V_schematic\annotation_1.xml" />
+        <Data_Files Name="dc_annotation\%L%E%A%R%N%I%N%G%A%D%S_lib_%S%T%E%P1_%D%C%I%V_schematic\annotation_map.xml" />
+        <Data_Files Name="STEP1_DCIV.ds" />
+        <Data_Files Name="STEP1_DCIV_data\logFile.txt" />
+        <Dataset Name="STEP2_STABILITY.ds" />
+        <Data_Files Name="dc_annotation\%L%E%A%R%N%I%N%G%A%D%S_lib_%S%T%E%P2_%S%T%A%B%I%L%I%T%Y_schematic\annotation_1.xml" />
+        <Data_Files Name="dc_annotation\%L%E%A%R%N%I%N%G%A%D%S_lib_%S%T%E%P2_%S%T%A%B%I%L%I%T%Y_schematic\annotation_map.xml" />
+        <Data_Files Name="STEP2_STABILITY.ds" />
+        <Data_Files Name="STEP2_STABILITY_data\logFile.txt" />
     </Workspace>
 </ADSWorkspace>

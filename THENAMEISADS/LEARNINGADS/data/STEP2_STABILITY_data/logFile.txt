@@ -1,0 +1,15 @@
+
+hpeesofsim (*) 530.shp Aug 11 2020, MINT version 5
+    (64-bit windows built: Wed Aug 12, 2020 02:42:05 +0000)
+
+Warning detected by hpeesofsim during netlist flattening.
+    Resistor `A1.RSSP' is shorted.
+
+Pt DC convergence is used.
+
+SP SP1[1] <LEARNINGADS_lib:STEP2_STABILITY:schematic>   freq=(500 MHz->6 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.29 seconds.
+
