@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="7" Version="100">
+<ADSWorkspace Revision="8" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers" />
@@ -45,5 +45,9 @@
         <Cell Name="LEARNINGADS_lib:Design1_Madara" />
         <Cell Name="LEARNINGADS_lib:Layout1" />
         <Cell Name="LEARNINGADS_lib:TestBench_MyFilter" />
+        <Cell Name="LEARNINGADS_lib:LNA_ATF21170" />
+        <Log Name="nettrans.log" />
+        <Library Name="atf21170_lib" />
+        <WrkAel Name="spice.ael" />
     </Workspace>
 </ADSWorkspace>

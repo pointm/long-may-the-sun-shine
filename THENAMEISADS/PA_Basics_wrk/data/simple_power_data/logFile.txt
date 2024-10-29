@@ -1,0 +1,28 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Tue Oct 29 10:57:04 2024
+      Running on host: "AlphaCentauri"
+      In Directory: "C:\Users\Pachirisu\Documents\GithubWorkSpace\long-may-the-sun-shine\THENAMEISADS\PA_Basics_wrk\data"
+      Process ID: 3780
+
+
+HB HB1[1] <PA_Basics_lib:simple_power:schematic>
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 88.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	27.7556 aA  	100.0             
+
+Resource usage:
+  Total stopwatch time     =     1.10 seconds.
+

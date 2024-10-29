@@ -1,0 +1,36 @@
+; Top Design: "PA_Basics_lib:simple_power:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="PA_Basics_lib:simple_power:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Port:PORT1  N__0 0 Num=1 Z=50 Ohm P[1]=0.5 W Freq[1]=1 GHz    Noise=yes Pac=polar(dbmtow(0),0) 
+R:R1  V 0 R=50 Ohm Noise=yes 
+Short:I  N__7 V Mode=0 SaveCurrent=yes 
+Short:DC_Feed1  N__5 N__7 Mode=-1 
+V_Source:SRC1  N__5 0 Type="V_DC" Vdc=5.0 V SaveCurrent=1 
+HB:HB1 MaxOrder=4 Freq[1]=1.0 GHz Order[1]=5 StatusLevel=2 HBSS_WSP=0 OutputPlan="HB1_Output" 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=1.0 GHz Order[1]=5 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+
+Short:DC_Block1  N__0 N__7 Mode=1 

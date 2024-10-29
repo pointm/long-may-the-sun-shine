@@ -3,8 +3,8 @@ pathMiterPercent 0.000000
 pathEndCap 2
 pathLayerName default
 textFontName Arial For CAE
-textPoint 12
-textJustification 9
+textPoint 5
+textJustification 34
 textAngle 0.000000
 textAbsolute 0
 instNameLayer 6

@@ -1,0 +1,19 @@
+Netlist Translator (*) 600.shp Apr  3 2024
+ADS Netlist translation log
+
+Input format: PSpice
+Input filename: C:/Users/Pachirisu/Documents/GithubWorkSpace/long-may-the-sun-shine/THENAMEISADS/ASSETS/atf21170.zap
+
+Output format: ADS Netlist file
+Output filename: C:\Users\Pachirisu\Documents\GithubWorkSpace\long-may-the-sun-shine\THENAMEISADS\LEARNINGADS\atf21170.net
+
+Special options:
+    Processing first line as comment.
+
+Begin translation at Tue Oct 29 10:13:55 2024
+
+Creating netlist.
+Reading item definition file "C:\Users\Pachirisu\ProgramFiles\ADS2024/config\spctoiff.cfg"
+Subcircuits found in Spice Netlist:   0
+Subcircuits written to ADS Netlist:   0
+Translation completed at Tue Oct 29 10:13:55 2024.
