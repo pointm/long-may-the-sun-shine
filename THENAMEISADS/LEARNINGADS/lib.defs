@@ -3,3 +3,4 @@ DEFINE LEARNINGADS_lib LEARNINGADS_lib
 ASSIGN LEARNINGADS_lib libMode shared
 INCLUDE $HOME/Documents/GithubWorkSpace/long-may-the-sun-shine/murata-lib-ads-s-ind-2406/muRataLibWeb_L_EIA_confidential/lib.defs
 INCLUDE $HOME/Documents/GithubWorkSpace/long-may-the-sun-shine/murata-lib-ads-s-mlcc-2408/muRataLibWeb_C_EIA_confidential/lib.defs
+INCLUDE $HOME/Documents/GithubWorkSpace/long-may-the-sun-shine/THENAMEISADS/LEARNINGADS/RF_Transistors_vendor_kit/lib.defs

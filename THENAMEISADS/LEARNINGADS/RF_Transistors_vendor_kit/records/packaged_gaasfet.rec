@@ -1,0 +1,530 @@
+<?xml version="1.0" ?>
+<COMPONENTS>
+ <COMPONENT>
+    <NAME>pf_mit_MGF2415A_19931015</NAME>
+    <DESCRIPTION> MGF2415A: GF1 Package 3-terminal, Gw=1500um, Gl=0.60um, Pdiss=2500mW Vbr=19V, @Vds=3V: Idss(sim)=353.51mA, Vt(sim)=-3.17V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_hp_ATF13284_19931014</NAME>
+    <DESCRIPTION> ATF13284: ATF84 Package 4-terminal, Gw=250um, Gl=0.30um, Pdiss=225mW Vbr=7V, @Vds=3V: Idss(sim)=29.47mA, Vt(sim)=-1.44V</DESCRIPTION>
+    <VENDOR>Agilent Technologies</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <AVAILABILITY>OBSOLETE</AVAILABILITY>
+    <URL>http://www.semiconductor.agilent.com</URL>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_tsb_S8837A_19931021</NAME>
+    <DESCRIPTION> S8837A: 2D7C1A Package 3-terminal, Gw=na, Gl=na, Pdiss=7500mW Vbr=19V, @Vds=3V: Idss(sim)=1090.19mA, Vt(sim)=-3.79V</DESCRIPTION>
+    <VENDOR>Toshiba</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE76184A_19921216</NAME>
+    <DESCRIPTION> NE76184A: NEC84A Package 4-terminal, Gw=na, Gl=na, Pdiss=300mW Vbr=4.5V, @Vds=3V: Idss(sim)=68.24mA, Vt(sim)=-1.36V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE67383_19921216</NAME>
+    <DESCRIPTION> NE67383: NEC83 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=270mW Vbr=5V, @Vds=3V: Idss(sim)=24.58mA, Vt(sim)=-0.77V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE72089A_19921216</NAME>
+    <DESCRIPTION> NE72089A: NEC89A Package 4-terminal, Gw=400um, Gl=1.00um, Pdiss=300mW Vbr=5V, @Vds=3V: Idss(sim)=46.48mA, Vt(sim)=-1.27V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_tsb_S8835_19931018</NAME>
+    <DESCRIPTION> S8835B: 2D3H1A Package 3-terminal, Gw=na, Gl=na, Pdiss=2500mW Vbr=17V, @Vds=3V: Idss(sim)=193.5mA, Vt(sim)=-4.07V</DESCRIPTION>
+    <VENDOR>Toshiba</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_tsb_S8835B_19931018</NAME>
+    <DESCRIPTION> S8835: 2D3H1A Package 3-terminal, Gw=na, Gl=na, Pdiss=2500mW Vbr=17V, @Vds=3V: Idss(sim)=193.5mA, Vt(sim)=-4.07V</DESCRIPTION>
+    <VENDOR>Toshiba</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_2SK406_19931022</NAME>
+    <DESCRIPTION> 2SK406: NEC83 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=270mW Vbr=5V, @Vds=3V: Idss(sim)=60.34mA, Vt(sim)=-1.4V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_370HP_19931015</NAME>
+    <DESCRIPTION> MWT-370HP: MWT70 Package 4-terminal, Gw=300um, Gl=0.30um, Pdiss=750mW Vbr=11V, @Vds=3V: Idss(sim)=83.58mA, Vt(sim)=-2.63V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_sms_CFY35_20_19931018</NAME>
+    <DESCRIPTION> CFY35-20: MW4 Package 4-terminal, Gw=na, Gl=na, Pdiss=180mW Vbr=4V, @Vds=3V: Idss(sim)=15.39mA, Vt(sim)=-0.86V</DESCRIPTION>
+    <VENDOR>Siemens</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE900175_19931018</NAME>
+    <DESCRIPTION> NE900175: NEC75 Package 3-terminal, Gw=750um, Gl=0.50um, Pdiss=1500mW Vbr=18V, @Vds=3V: Idss(sim)=230.64mA, Vt(sim)=-3.5V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_2SK407_19921216</NAME>
+    <DESCRIPTION> 2SK407: NEC84 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=270mW Vbr=5V, @Vds=3V: Idss(sim)=24.58mA, Vt(sim)=-0.77V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_770HP_19931015</NAME>
+    <DESCRIPTION> MWT-770HP: MWT70 Package 4-terminal, Gw=250um, Gl=0.30um, Pdiss=600mW Vbr=8.5V, @Vds=3V: Idss(sim)=80.18mA, Vt(sim)=-2.13V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_sms_CFY25_17_19921216</NAME>
+    <DESCRIPTION> CFY25-17: CERECXF Package 4-terminal, Gw=na, Gl=na, Pdiss=250mW Vbr=6.5V, @Vds=3V: Idss(sim)=34.58mA, Vt(sim)=-1.25V</DESCRIPTION>
+    <VENDOR>Siemens</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_671HP_19931015</NAME>
+    <DESCRIPTION> MWT-671HP: MWT71 Package 3-terminal, Gw=900um, Gl=0.30um, Pdiss=2250mW Vbr=15V, @Vds=3V: Idss(sim)=273.37mA, Vt(sim)=-3.74V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_871HP_19931015</NAME>
+    <DESCRIPTION> MWT-871HP: MWT71 Package 3-terminal, Gw=1200um, Gl=0.30um, Pdiss=3000mW Vbr=15V, @Vds=3V: Idss(sim)=280.63mA, Vt(sim)=-3.07V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_2SK609_19921216</NAME>
+    <DESCRIPTION> 2SK609: NEC84 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=270mW Vbr=5V, @Vds=3V: Idss(sim)=58.26mA, Vt(sim)=-1.43V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_270_19931015</NAME>
+    <DESCRIPTION> MWT-270: MWT70 Package 4-terminal, Gw=630um, Gl=0.30um, Pdiss=1500mW Vbr=11V, @Vds=3V: Idss(sim)=156.46mA, Vt(sim)=-2.45V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_sms_CFY19_18_19921216</NAME>
+    <DESCRIPTION> CFY19-18: CERECXF Package 4-terminal, Gw=na, Gl=na, Pdiss=300mW Vbr=8V, @Vds=3V: Idss(sim)=65.39mA, Vt(sim)=-3.05V</DESCRIPTION>
+    <VENDOR>Siemens</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1412_19931022</NAME>
+    <DESCRIPTION> MGF1412: GD9 Package 4-terminal, Gw=400um, Gl=0.70um, Pdiss=360mW Vbr=5V, @Vds=3V: Idss(sim)=81.65mA, Vt(sim)=-1.52V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE71083_19931022</NAME>
+    <DESCRIPTION> NE71083: NEC83 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=270mW Vbr=5V, @Vds=3V: Idss(sim)=60.34mA, Vt(sim)=-1.4V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1302_19921216</NAME>
+    <DESCRIPTION> MGF1302: GD4 Package 4-terminal, Gw=400um, Gl=0.80um, Pdiss=360mW Vbr=5V, @Vds=3V: Idss(sim)=45.51mA, Vt(sim)=-0.97V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_1171HP_19931020</NAME>
+    <DESCRIPTION> MWT-1171HP: MWT71 Package 3-terminal, Gw=2400um, Gl=0.30um, Pdiss=5000mW Vbr=15V, @Vds=3V: Idss(sim)=630.62mA, Vt(sim)=-2.45V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1423_19931015</NAME>
+    <DESCRIPTION> MGF1423: GD9 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=240mW Vbr=6V, @Vds=3V: Idss(sim)=68.16mA, Vt(sim)=-1.91V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1403_19921216</NAME>
+    <DESCRIPTION> MGF1403: GD9 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=240mW Vbr=5V, @Vds=3V: Idss(sim)=55.78mA, Vt(sim)=-1.24V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1801_19931015</NAME>
+    <DESCRIPTION> MGF1801: GD11 Package 4-terminal, Gw=800um, Gl=0.80um, Pdiss=1200mW Vbr=11V, @Vds=3V: Idss(sim)=212.83mA, Vt(sim)=-2.73V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1303B_19921216</NAME>
+    <DESCRIPTION> MGF1303B: GD4 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=240mW Vbr=5V, @Vds=3V: Idss(sim)=61.62mA, Vt(sim)=-1.63V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE71084_19921216</NAME>
+    <DESCRIPTION> NE71084: NEC84 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=270mW Vbr=5V, @Vds=3V: Idss(sim)=58.26mA, Vt(sim)=-1.43V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE72084_19921216</NAME>
+    <DESCRIPTION> NE72084: NEC84 Package 4-terminal, Gw=400um, Gl=1.00um, Pdiss=300mW Vbr=5V, @Vds=3V: Idss(sim)=68.06mA, Vt(sim)=-1.86V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_hp_ATF13136_19931014</NAME>
+    <DESCRIPTION> ATF13136: ATF36 Package 4-terminal, Gw=250um, Gl=0.30um, Pdiss=225mW Vbr=7V, @Vds=3V: Idss(sim)=46.37mA, Vt(sim)=-1.4V</DESCRIPTION>
+    <VENDOR>Agilent Technologies</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <AVAILABILITY>OBSOLETE</AVAILABILITY>
+    <URL>http://www.semiconductor.agilent.com</URL>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF0904A_19931015</NAME>
+    <DESCRIPTION> MGF0904A: GF7 Package 3-terminal, Gw=na, Gl=na, Pdiss=3750mW Vbr=18V, @Vds=3V: Idss(sim)=542.76mA, Vt(sim)=-3.31V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1425_19921216</NAME>
+    <DESCRIPTION> MGF1425: GD9 Package 4-terminal, Gw=250um, Gl=0.40um, Pdiss=200mW Vbr=5V, @Vds=3V: Idss(sim)=39.81mA, Vt(sim)=-1.09V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE76038_19921216</NAME>
+    <DESCRIPTION> NE76038: NEC38 Package 4-terminal, Gw=280um, Gl=0.30um, Pdiss=240mW Vbr=7.5V, @Vds=3V: Idss(sim)=27.38mA, Vt(sim)=-0.9V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE76084_19921216</NAME>
+    <DESCRIPTION> NE76084: NEC84 Package 4-terminal, Gw=280um, Gl=0.30um, Pdiss=240mW Vbr=7.5V, @Vds=3V: Idss(sim)=25.5mA, Vt(sim)=-0.8V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1902B_19921216</NAME>
+    <DESCRIPTION> MGF1902B: GD7 Package 4-terminal, Gw=400um, Gl=0.80um, Pdiss=360mW Vbr=15V, @Vds=3V: Idss(sim)=49.47mA, Vt(sim)=-1.12V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF2407A_19931018</NAME>
+    <DESCRIPTION> MGF2407A: GF1 Package 3-terminal, Gw=750um, Gl=0.70um, Pdiss=1500mW Vbr=19V, @Vds=3V: Idss(sim)=178.68mA, Vt(sim)=-3.06V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_tsb_S8834_19931018</NAME>
+    <DESCRIPTION> S8834: 2D3H1A Package 3-terminal, Gw=na, Gl=na, Pdiss=1500mW Vbr=19V, @Vds=3V: Idss(sim)=89.05mA, Vt(sim)=-3.82V</DESCRIPTION>
+    <VENDOR>Toshiba</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1903B_19931018</NAME>
+    <DESCRIPTION> MGF1903B: GD7 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=240mW Vbr=15V, @Vds=3V: Idss(sim)=40.73mA, Vt(sim)=-1.4V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF2148_19931019</NAME>
+    <DESCRIPTION> MGF2148: GF4 Package 4-terminal, Gw=750um, Gl=0.60um, Pdiss=10000mW Vbr=17V, @Vds=3V: Idss(sim)=1290.24mA, Vt(sim)=-3.83V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF0905A_19931019</NAME>
+    <DESCRIPTION> MGF0905A: GF7 Package 3-terminal, Gw=na, Gl=na, Pdiss=21500mW Vbr=17V, @Vds=3V: Idss(sim)=2299.21mA, Vt(sim)=-2.52V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF0906A_19931019</NAME>
+    <DESCRIPTION> MGF0906A: GF21 Package 3-terminal, Gw=na, Gl=na, Pdiss=23000mW Vbr=21V, @Vds=3V: Idss(sim)=2786.99mA, Vt(sim)=-4.15V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_tsb_S8836A_19931018</NAME>
+    <DESCRIPTION> S8836A: 2D7C1A Package 3-terminal, Gw=na, Gl=na, Pdiss=5000mW Vbr=21V, @Vds=3V: Idss(sim)=569.74mA, Vt(sim)=-4.58V</DESCRIPTION>
+    <VENDOR>Toshiba</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_sms_CFY30_19931018</NAME>
+    <DESCRIPTION> CFY30: SOT143 Package 3-terminal, Gw=na, Gl=na, Pdiss=250mW Vbr=7V, @Vds=3V: Idss(sim)=37.64mA, Vt(sim)=-2.86V</DESCRIPTION>
+    <VENDOR>Siemens</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_hp_ATF13786_19931015</NAME>
+    <DESCRIPTION> ATF13786: ATF86 Package 4-terminal, Gw=250um, Gl=0.30um, Pdiss=225mW Vbr=6V, @Vds=3V: Idss(sim)=60.66mA, Vt(sim)=-1.55V</DESCRIPTION>
+    <VENDOR>Agilent Technologies</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <URL>http://www.semiconductor.agilent.com</URL>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_hp_ATF26884_19931015</NAME>
+    <DESCRIPTION> ATF26884: ATF84 Package 4-terminal, Gw=250um, Gl=0.30um, Pdiss=275mW Vbr=7.5V, @Vds=3V: Idss(sim)=41.28mA, Vt(sim)=-1.88V</DESCRIPTION>
+    <VENDOR>Agilent Technologies</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <URL>http://www.semiconductor.agilent.com</URL>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_oki_KGF1305_19931020</NAME>
+    <DESCRIPTION> KGF1305: OKI_1 Package 3-terminal, Gw=na, Gl=na, Pdiss=3000mW Vbr=9.8V, @Vds=3V: Idss(sim)=1469.99mA, Vt(sim)=-3.16V</DESCRIPTION>
+    <VENDOR>Oki</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE900075_19931018</NAME>
+    <DESCRIPTION> NE900075: NEC75 Package 3-terminal, Gw=400um, Gl=0.50um, Pdiss=800mW Vbr=15V, @Vds=3V: Idss(sim)=102.64mA, Vt(sim)=-3.28V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE900275_19931018</NAME>
+    <DESCRIPTION> NE900275: NEC75 Package 3-terminal, Gw=1500um, Gl=0.50um, Pdiss=3000mW Vbr=18V, @Vds=3V: Idss(sim)=385.32mA, Vt(sim)=-3.1V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_770LN_19931020</NAME>
+    <DESCRIPTION> MWT-770LN: MWT70 Package 4-terminal, Gw=250um, Gl=0.30um, Pdiss=600mW Vbr=7V, @Vds=3V: Idss(sim)=61.81mA, Vt(sim)=-1.98V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_sms_CFY35_23_19931018</NAME>
+    <DESCRIPTION> CFY35-23: MW4 Package 4-terminal, Gw=na, Gl=na, Pdiss=180mW Vbr=7V, @Vds=3V: Idss(sim)=21.01mA, Vt(sim)=-1.03V</DESCRIPTION>
+    <VENDOR>Siemens</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_fuj_FLL101ME_19931021</NAME>
+    <DESCRIPTION> FLL101ME: ME Package 3-terminal, Gw=na, Gl=na, Pdiss=4160mW Vbr=19V, @Vds=3V: Idss(sim)=370.89mA, Vt(sim)=-2.71V</DESCRIPTION>
+    <VENDOR>Fujitsu</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_470LN_19931015</NAME>
+    <DESCRIPTION> MWT-470LN: MWT70 Package 4-terminal, Gw=180um, Gl=0.30um, Pdiss=360mW Vbr=8V, @Vds=3V: Idss(sim)=38.43mA, Vt(sim)=-1.76V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_2SK571_19921216</NAME>
+    <DESCRIPTION> 2SK571: NEC84 Package 4-terminal, Gw=400um, Gl=1.00um, Pdiss=300mW Vbr=5V, @Vds=3V: Idss(sim)=68.06mA, Vt(sim)=-1.86V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_2SK354A_19921216</NAME>
+    <DESCRIPTION> 2SK354A: NEC89 Package 4-terminal, Gw=400um, Gl=1.00um, Pdiss=300mW Vbr=5V, @Vds=3V: Idss(sim)=46.48mA, Vt(sim)=-1.27V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_nec_NE900089A_19931018</NAME>
+    <DESCRIPTION> NE900089A: NEC89A Package 4-terminal, Gw=400um, Gl=0.50um, Pdiss=800mW Vbr=13V, @Vds=3V: Idss(sim)=128.22mA, Vt(sim)=-3.79V</DESCRIPTION>
+    <VENDOR>NEC</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_170_19931015</NAME>
+    <DESCRIPTION> MWT-170: MWT70 Package 4-terminal, Gw=630um, Gl=0.30um, Pdiss=1200mW Vbr=8V, @Vds=3V: Idss(sim)=163.96mA, Vt(sim)=-2.61V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_773HP_19931015</NAME>
+    <DESCRIPTION> MWT-773HP: MWT73 Package 3-terminal, Gw=250um, Gl=0.30um, Pdiss=600mW Vbr=15V, @Vds=3V: Idss(sim)=81.66mA, Vt(sim)=-2.06V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_fuj_FLL351ME_19931021</NAME>
+    <DESCRIPTION> FLL351ME: ME Package 3-terminal, Gw=na, Gl=na, Pdiss=15000mW Vbr=19V, @Vds=3V: Idss(sim)=1279.64mA, Vt(sim)=-2.21V</DESCRIPTION>
+    <VENDOR>Fujitsu</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mwt_MWT_971_19931020</NAME>
+    <DESCRIPTION> MWT-971: MWT71 Package 3-terminal, Gw=750um, Gl=0.30um, Pdiss=1750mW Vbr=11V, @Vds=3V: Idss(sim)=198.63mA, Vt(sim)=-2.68V</DESCRIPTION>
+    <VENDOR>Mwt</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1402_19921216</NAME>
+    <DESCRIPTION> MGF1402: GD9 Package 4-terminal, Gw=400um, Gl=0.80um, Pdiss=360mW Vbr=5V, @Vds=3V: Idss(sim)=64.83mA, Vt(sim)=-1.35V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_hp_ATF21170_19931015</NAME>
+    <DESCRIPTION> ATF21170: ATF70 Package 4-terminal, Gw=750um, Gl=0.30um, Pdiss=600mW Vbr=9V, @Vds=3V: Idss(sim)=97.42mA, Vt(sim)=-1.24V</DESCRIPTION>
+    <VENDOR>Agilent Technologies</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <URL>http://www.semiconductor.agilent.com</URL>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF2430A_19931015</NAME>
+    <DESCRIPTION> MGF2430A: GF1 Package 3-terminal, Gw=3000um, Gl=0.60um, Pdiss=5000mW Vbr=19V, @Vds=3V: Idss(sim)=601.86mA, Vt(sim)=-2.54V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1304A_19921216</NAME>
+    <DESCRIPTION> MGF1304A: GD4 Package 4-terminal, Gw=300um, Gl=0.50um, Pdiss=200mW Vbr=5V, @Vds=3V: Idss(sim)=24.92mA, Vt(sim)=-0.71V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>pf_mit_MGF1305_19921216</NAME>
+    <DESCRIPTION> MGF1305: GD4 Package 4-terminal, Gw=300um, Gl=0.40um, Pdiss=200mW Vbr=5V, @Vds=3V: Idss(sim)=36.52mA, Vt(sim)=-1.08V</DESCRIPTION>
+    <VENDOR>Mitsubishi</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+</COMPONENTS>

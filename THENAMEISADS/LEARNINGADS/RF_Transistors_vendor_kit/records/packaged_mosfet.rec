@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<COMPONENTS>
+ <COMPONENT>
+    <NAME>mf_phi_LF2805A_19930106</NAME>
+    <DESCRIPTION> LF2805A: AFLANGE Package 3-terminal, Pdiss=14.4W Vbr=65V, Vt(sim)=4.16V, @Vgs=7.04V Vds=28V: Ids(sim)=293.20mA, Gm(sim)=146.3mS</DESCRIPTION>
+    <VENDOR>M/A-com</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_phi_UF2810P_19930106</NAME>
+    <DESCRIPTION> UF2810P: PFLANGE Package 3-terminal, Pdiss=26.9W Vbr=65V, Vt(sim)=4.24V, @Vgs=7V Vds=28V: Ids(sim)=281.30mA, Gm(sim)=145.8mS</DESCRIPTION>
+    <VENDOR>M/A-com</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_mot_MRF136Y_19930106</NAME>
+    <DESCRIPTION> MRF136Y: C319BD01 Package 5-terminal, Pdiss=100W Vbr=65V, Vt(sim)=2.88V, @Vgs=6.2V Vds=28V: Ids(sim)=962.00mA, Gm(sim)=424.3mS</DESCRIPTION>
+    <VENDOR>Motorola</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_phi_DU2810S_19930106</NAME>
+    <DESCRIPTION> DU2810S: SFLANGE Package 4-terminal, Pdiss=35W Vbr=65V, Vt(sim)=4.12V, @Vgs=6.72V Vds=28V: Ids(sim)=582.20mA, Gm(sim)=325mS</DESCRIPTION>
+    <VENDOR>M/A-com</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_phi_UF2820P_19930106</NAME>
+    <DESCRIPTION> UF2820P: PFLANGE Package 3-terminal, Pdiss=53W Vbr=65V, Vt(sim)=4.58V, @Vgs=7V Vds=28V: Ids(sim)=448.80mA, Gm(sim)=267.6mS</DESCRIPTION>
+    <VENDOR>M/A-com</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_phi_DU2805S_19930106</NAME>
+    <DESCRIPTION> DU2805S: SFLANGE Package 4-terminal, Pdiss=15.8W Vbr=65V, Vt(sim)=4.8V, @Vgs=7.44V Vds=28V: Ids(sim)=268.20mA, Gm(sim)=145.5mS</DESCRIPTION>
+    <VENDOR>M/A-com</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_phi_UF2805B_19930106</NAME>
+    <DESCRIPTION> UF2805B: BFLANGE Package 3-terminal, Pdiss=14.4W Vbr=65V, Vt(sim)=3.94V, @Vgs=6.72V Vds=28V: Ids(sim)=296.10mA, Gm(sim)=153mS</DESCRIPTION>
+    <VENDOR>M/A-com</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_mot_MRF134_19930106</NAME>
+    <DESCRIPTION> MRF134: C211D07 Package 4-terminal, Pdiss=17.5W Vbr=65V, Vt(sim)=3.14V, @Vgs=6.7V Vds=28V: Ids(sim)=351.80mA, Gm(sim)=143mS</DESCRIPTION>
+    <VENDOR>Motorola</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_mot_MRF161_19930106</NAME>
+    <DESCRIPTION> MRF161: C244D04 Package 3-terminal, Pdiss=17.5W Vbr=65V, Vt(sim)=3.1V, @Vgs=6.82V Vds=28V: Ids(sim)=368.80mA, Gm(sim)=143.8mS</DESCRIPTION>
+    <VENDOR>Motorola</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_phi_UF2815B_19930106</NAME>
+    <DESCRIPTION> UF2815B: BFLANGE Package 3-terminal, Pdiss=48.6W Vbr=65V, Vt(sim)=3.5V, @Vgs=6.42V Vds=28V: Ids(sim)=874.40mA, Gm(sim)=433.9mS</DESCRIPTION>
+    <VENDOR>M/A-com</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_ply_F2001_19930106</NAME>
+    <DESCRIPTION> F2001: AP Package 3-terminal, Pdiss=20W Vbr=70V, Vt(sim)=1.98V, @Vgs=4.26V Vds=28V: Ids(sim)=383.30mA, Gm(sim)=239.7mS</DESCRIPTION>
+    <VENDOR>PolyFet</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_mot_MRF136_19930106</NAME>
+    <DESCRIPTION> MRF136: C211D07 Package 3-terminal, Pdiss=55W Vbr=65V, Vt(sim)=2.88V, @Vgs=6.2V Vds=28V: Ids(sim)=962.00mA, Gm(sim)=424.3mS</DESCRIPTION>
+    <VENDOR>Motorola</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_ply_F2002_19930106</NAME>
+    <DESCRIPTION> F2002: AP Package 3-terminal, Pdiss=30W Vbr=70V, Vt(sim)=0.9V, @Vgs=3.98V Vds=28V: Ids(sim)=680.90mA, Gm(sim)=321.8mS</DESCRIPTION>
+    <VENDOR>PolyFet</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_phi_LF2810A_19930106</NAME>
+    <DESCRIPTION> LF2810A: AFLANGE Package 3-terminal, Pdiss=26.5W Vbr=65V, Vt(sim)=4.14V, @Vgs=6.98V Vds=28V: Ids(sim)=555.50mA, Gm(sim)=284.7mS</DESCRIPTION>
+    <VENDOR>M/A-com</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_ply_F2003_19930106</NAME>
+    <DESCRIPTION> F2003: AQ Package 5-terminal, Pdiss=30W Vbr=70V, Vt(sim)=1.98V, @Vgs=4.26V Vds=28V: Ids(sim)=383.30mA, Gm(sim)=239.7mS</DESCRIPTION>
+    <VENDOR>PolyFet</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_phi_LF2802A_19930106</NAME>
+    <DESCRIPTION> LF2802A: AFLANGE Package 3-terminal, Pdiss=8W Vbr=65V, Vt(sim)=4.06V, @Vgs=7.22V Vds=28V: Ids(sim)=188.30mA, Gm(sim)=84.7mS</DESCRIPTION>
+    <VENDOR>M/A-com</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+ <COMPONENT>
+    <NAME>mf_ply_F2004_19930106</NAME>
+    <DESCRIPTION> F2004: AK Package 5-terminal, Pdiss=60W Vbr=70V, Vt(sim)=0.9V, @Vgs=3.98V Vds=28V: Ids(sim)=680.90mA, Gm(sim)=321.8mS</DESCRIPTION>
+    <VENDOR>PolyFet</VENDOR>
+    <LIBRARY>RF_Transistor_Library</LIBRARY>
+    <PLACEMENT>LAYOUT</PLACEMENT>
+ </COMPONENT>
+
+</COMPONENTS>

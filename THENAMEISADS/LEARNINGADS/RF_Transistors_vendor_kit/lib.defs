@@ -1,0 +1,5 @@
+# ADS technology library definitions file
+INCLUDE  $HPEESOF_DIR/oalibs/tech.defs
+
+DEFINE RF_Transistors ./RF_Transistors
+ASSIGN RF_Transistors libMode readOnly

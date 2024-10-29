@@ -1,0 +1,13 @@
+pb_hp_AT00510_19921101 | HP |OBSOLETE   AT00510, Package:NEC07, Model Gummel-Poon NPN, | packaged_bjt_all | LAYOUT
+pb_hp_AT00511_19931202 | HP |OBSOLETE   AT00511: SOT143 Package 4-terminal, NPN Pdiss=230mW, Vce(Max)=12V, Ic(Max)=50mA, Vce(typical)=8V, Ic(Typical)=15mA, Hfe=150, Ft=7GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT00535_19921101 | HP |OBSOLETE   AT00535, Package:35, Model Gummel-Poon NPN, Pdiss=230mW, Vce(Max)=12V, Ic(Max)=50mA, Vce(typical)=8V, Ic(Typical)=15mA, Hfe=150, Ft=7GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT00570_19921101 | HP |OBSOLETE   AT00570, Package:70, Model Gummel-Poon NPN, NPN Pdiss=230mW, Vce(Max)=12V, Ic(Max)=50mA, Vce(typical)=8V, Ic(Typical)=15mA, Hfe=150, Ft=7GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT01610_19921101 | HP |OBSOLETE   AT01610, Package:07, Model Gummel-Poon NPN, Pdiss=230mW, Vce(Max)=12V, Ic(Max)=50mA, Vce(typical)=8V, Ic(Typical)=15mA, Hfe=150, Ft=7GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT01635_19921101 | HP |OBSOLETE   AT01635, Package:35, Model Gummel-Poon NPN, Pdiss=230mW, Vce(Max)=12V, Ic(Max)=50mA, Vce(typical)=8V, Ic(Typical)=15mA, Hfe=150, Ft=7GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT01670_19921101 | HP |OBSOLETE   AT01670, Package:70, Model Gummel-Poon NPN, Pdiss=230mW, Vce(Max)=12V, Ic(Max)=50mA, Vce(typical)=8V, Ic(Typical)=15mA, Hfe=150, Ft=7GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT60510_19921101 | HP |OBSOLETE   AT60510, Pacakge:07, Model Gummel-Poon NPN, Pdiss=500mW, Vce(Max)=12V, Ic(Max)=80mA, Vce(typical)=8V, Ic(Typical)=35mA, Hfe=150, Ft=8GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT60535_19911003 | HP |OBSOLETE   AT60535, Pacakge:35, Model Gummel-Poon NPN, Pdiss=500mW, Vce(Max)=12V, Ic(Max)=80mA, Vce(typical)=8V, Ic(Typical)=35mA, Hfe=150, Ft=8GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT60535_19921101 | HP |OBSOLETE   AT60535: AVNK35 Package 4-terminal, NPN Pdiss=500mW, Vce(Max)=12V, Ic(Max)=80mA, Vce(typical)=8V, Ic(Typical)=35mA, Hfe=150, Ft=8GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT60570_19921101 | HP |OBSOLETE   AT60570, Package:70, Model Gummel-Poon NPN, Pdiss=400mW, Vce(Max)=12V, Ic(Max)=40mA, Vce(typical)=8V, Ic(Typical)=10mA, Hfe=150, Ft=8GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT60585_19921101 | HP |OBSOLETE   AT60585, Pacakge:85, Model : Gummel-Poon NPN from MDS library, Pdiss=400mW, Vce(Max)=12V, Ic(Max)=40mA, Vce(typical)=8V, Ic(Typical)=10mA, Hfe=150, Ft=8GHz | packaged_bjt_all | LAYOUT
+pb_hp_AT60586_19921101 | HP |OBSOLETE   AT60586, Pacakge:86, Model Gummel-Poon NPN, Pdiss=400mW, Vce(Max)=12V, Ic(Max)=40mA, Vce(typical)=8V, Ic(Typical)=10mA, Hfe=150, Ft=8GHz | packaged_bjt_all | LAYOUT
