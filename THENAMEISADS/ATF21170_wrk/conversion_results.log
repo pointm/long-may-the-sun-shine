@@ -1,0 +1,10 @@
+ADS Project to Workspace Conversion Results Log: 周二 10月 29 15:53:10 2024
+----------------------------------------------
+
+Project to Workspace Conversion Completed with Warning message(s):
+
+Warning(s) reported: 
+Conversion Error: translating 'ATF21170B' to cell 'ATF21170B' in library 'ATF21170_lib' (conversion continues):
+Design "C:\Users\Pachirisu\Documents\GithubWorkSpace\long-may-the-sun-shine\THENAMEISADS\ATF21170_prj\networks\ATF21170B" was saved using a version of ADS older than 2004A (file version 7100).  This old version is not fully supported for conversion to the current version of ADS.  Check the converted design carefully.  For best results, load the design into ADS 2009 Update 1 and re-save it.
+----------------------------------------------
+

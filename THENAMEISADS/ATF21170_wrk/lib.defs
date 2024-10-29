@@ -1,0 +1,3 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+DEFINE ATF21170_lib ATF21170_lib
+ASSIGN ATF21170_lib libMode shared

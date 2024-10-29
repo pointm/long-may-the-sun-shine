@@ -3,8 +3,8 @@ pathMiterPercent 0.000000
 pathEndCap 2
 pathLayerName default
 textFontName Arial For CAE
-textPoint 5
-textJustification 20
+textPoint 12
+textJustification 9
 textAngle 0.000000
 textAbsolute 0
 instNameLayer 6
@@ -21,12 +21,12 @@ wireLabelColor 37
 fixedInstHighlightColor 2
 lockedInstHighlightColor 1
 oversize 0.100000
-oversizeMiter 0.000000
+oversizeMiter 45.000000
 scaleX 1.000000
 scaleY 1.000000
 toArcRadius 0.300000
 miterVertexLength 1.000000
-portOrientation 10000.000000
+portOrientation 0.000000
 plottingDepth 10
 bboxColor 0
 selectColor 0
@@ -45,7 +45,7 @@ shapeSelectMode 2
 selectBoxSize 10.000000
 selectPointSize 8.000000
 entryMode 0
-rotationIncrement 90.000000
+rotationIncrement 45.000000
 gridDisplayX 2
 gridDisplayY 2
 gridDisplayOn 1
@@ -110,7 +110,7 @@ keepoutOutlineThickness 1
 placePopupOnZeroParm 0
 autoRepeatableCompPlcmnt 1
 dragMove 1
-dragMoveThresholdSize 6.000000
+dragMoveThresholdSize 10.000000
 dveEpsilon 0.000000
 dveFringe 10.000000
 dveArcCircleResolution 5.000000
@@ -135,8 +135,8 @@ maintainAngle 1
 textOrigin 0
 minPixelDisplaySize 4
 rerouteTraces 0
-prefVersion 1
-genericArtworkSize 4.000000
+prefVersion 0
+genericArtworkSize 40.000000
 plotLessThanMinPixels 1
 plotDepthForLessThanMinPixels 2
 newRouteAroundInstText 0
@@ -178,7 +178,7 @@ unitsRes 1
 unitsCond 4
 unitsInd 5
 unitsCap 5
-unitsLng 4
+unitsLng 1
 unitsTime 5
 unitsAng 0
 unitsPower 4

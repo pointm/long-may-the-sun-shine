@@ -1,0 +1,15 @@
+
+HPEESOFSIM  (ver. "110" rev. "300" -- 02/05/99 19:55:05)
+Copyright Hewlett-Packard Company, 1989-1998.
+
+SP SP1[1] <(GEMX netlist)>   freq=(500 MHz->10 GHz)
+....................
+
+DC DC1[1] <(GEMX netlist)>  
+.
+Convergence achieved in 21 iterations.
+
+-------------------
+Simulation finished.
+-------------------
+

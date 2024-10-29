@@ -1,5 +1,8 @@
 <!DOCTYPE SaveWorkspaceState>
 <SaveWorkspaceState>
-    <Windows/>
+    <Windows>
+        <Schematic view="schematic" lib="LEARNINGADS_lib" geom="1,0,0,417,35,1502,996,1920,1080" x1="416" y1="4" height="996" cell="TestBench_MyFilter" width="1502"/>
+        <DDS name="TestBench_MyFilter.dds"/>
+    </Windows>
     <MainWindowTab tab="1"/>
 </SaveWorkspaceState>

@@ -16,7 +16,7 @@ end Design1
 
 Design1:X1  N__2 N__3 
 S_Param:SP1 CalcS=yes CalcY=no CalcZ=no CalcGroupDelay=yes GroupDelayAperture=1e-4 \
-FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
+FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
 SweepPlan: SP1_stim Start=0 GHz Stop=0.5 GHz Lin=101 
@@ -48,9 +48,5 @@ Port:TermG2  N__3 0 Num=2 Z=50 Ohm notune{ 25 Ohm to 75 Ohm by 5 Ohm } noopt{ 25
 #endif
 
 
-#load "python","PostProcessing"
-Controller Module="PostProcessing" \ 
-PostProcessingModule="SPOutput" \ 
-Argument[1] = "MyFilter_Madara.s2p" \ 
-Argument[2] = "touchstone" \ 
-Argument[3] = "MA"  
+#uselib "ckt" , "SnP"
+SnP:SnP1  N__0 N__1 NumPorts=2 File="C:\Users\Pachirisu\Documents\GithubWorkSpace\long-may-the-sun-shine\THENAMEISADS\LEARNINGADS\data\MyFilter_Madara.s2p" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
