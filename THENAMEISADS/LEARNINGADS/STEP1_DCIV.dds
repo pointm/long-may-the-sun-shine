@@ -334,7 +334,7 @@ decl axisID;
 axisID = get_new(goId0, "Axis", ddsXaxis, "");
 // Axis...
 	if (axisID != NULL) {
-		 set(axisID, "Uid", 466348496);
+		 set(axisID, "Uid", 1437453380);
 		 set(axisID, "Color", 104);
 		 set(axisID, "UserLabel", "");
 		 set(axisID, "LabelColor", 0);
@@ -518,8 +518,8 @@ goId0 = get_new(pageId, "Text");
 ddWinId = get_new(ddsId, "Window");
 	set(ddWinId, "Object", ddoId);
 	set(ddWinId, "CurrentPage", 82565262);
-	set(ddWinId, "PageViewRect_82565262", list(-1174, 7164, 11855, 462));
-	set(ddWinId, "Frame", list(-149, 87, 1920, 1009));
+	set(ddWinId, "PageViewRect_82565262", list(-1177, 7166, 11856, 462));
+	set(ddWinId, "Frame", list(-156, 87, 1920, 1009));
 	set(ddWinId, "ForegroundColor", 0);
 	set(ddWinId, "BackgroundColor", 8);
 	set(ddWinId, "WindowPageOrder", list("Page 1 : FET_curve_tracer"));

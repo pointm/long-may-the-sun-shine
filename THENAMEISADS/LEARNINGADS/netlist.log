@@ -1,41 +1,39 @@
-; Top Design: "LEARNINGADS_lib:STEP1_DCIV:schematic"
+; Top Design: "LEARNINGADS_lib:STEP3_STABILITY_NETWORK:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="LEARNINGADS_lib:STEP1_DCIV:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
-Short:IDS  N__1 N__2 Mode=0 SaveCurrent=yes 
-V_Source:SRC2  N__3 0 Type="V_DC" Vdc=VGS SaveCurrent=1 
-V_Source:SRC1  N__1 0 Type="V_DC" Vdc=VDS SaveCurrent=1 
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="LEARNINGADS_lib:STEP3_STABILITY_NETWORK:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+R:R2  N__6 N__8 R=15 Ohm Noise=yes 
+#uselib "RfTransistorLibrary" , "pf_hp_ATF21170_19931015"
+pf_hp_ATF21170_19931015:A1  N__6 N__11 0 0 
+Short:DC_Block1  N__4 N__11 Mode=1 
+Short:DC_Block2  N__8 N__0 Mode=1 
+Short:DC_Feed1  N__5 N__6 Mode=-1 
+Short:DC_Feed2  N__11 N__2 Mode=-1 
+V_Source:SRC1  N__5 0 Type="V_DC" Vdc=3 V SaveCurrent=1 
+V_Source:SRC2  N__2 0 Type="V_DC" Vdc=-0.4 V SaveCurrent=1 
+aele Mu1=mu(S);
+aele MuPrime1=mu_prime(S);
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=yes SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
-VDS =0 V
-VGS =0 V
-ParamSweep:Sweep1 SimInstanceName[1]="DC1" StatusLevel=2 SweepVar="VGS" SweepPlan="Sweep1_stim" 
+SweepPlan: SP1_stim Start=0.5 GHz Stop=6 GHz Step=0.1 GHz 
 
-SweepPlan: Sweep1_stim Start=-1 Stop=0 Step=0.1 
-
-DC:DC1 StatusLevel=2 DevOpPtLevel=0 UseFiniteDiff=no PrintOpPoint=no Restart=1 \
-SweepVar="VDS" SweepPlan="DC1_stim" OutputPlan="DC1_Output" 
-
-SweepPlan: DC1_stim Start=0 Stop=5 Step=0.1 
-
-OutputPlan:DC1_Output \
+OutputPlan:SP1_Output \
       Type="Output" \
-      UseNodeNestLevel=yes \
-      NodeNestLevel=2 \
       UseEquationNestLevel=yes \
       EquationNestLevel=2 \
       UseSavedEquationNestLevel=yes \
-      SavedEquationNestLevel=2 \
-      UseDeviceCurrentNestLevel=no \
-      DeviceCurrentNestLevel=0 \
-      DeviceCurrentDeviceType="All" \
-      DeviceCurrentSymSyntax=yes \
-      UseCurrentNestLevel=yes \
-      CurrentNestLevel=999 \
-      UseDeviceVoltageNestLevel=no \
-      DeviceVoltageNestLevel=0 \
-      DeviceVoltageDeviceType="All"
+      SavedEquationNestLevel=2
 
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
 
-;#@# autodisplay="FET_curve_tracer"
-#uselib "RfTransistorLibrary" , "pf_hp_ATF21170_19931015"
-pf_hp_ATF21170_19931015:A1  N__2 N__3 0 0 
+Options:Options1 Temp=16.85 Tnom=25 TopologyCheck=yes ForceS_Params=yes GiveAllWarnings=yes  \
+MaxWarnings=10 ForceM_Params=yes InitialGuessAnnotation=0 TopologyCheckMessages=no doDeltaAC=no  \
+ReduceSPortRatio=0.5 WarnSOA=yes MaxWarnSOA=5 Census=no MinNodalR=1e-2 Ohm  \
+LargeCapThreshold=1e-3 F EnableAssertChecks=no EnableSpareRemoval=no 
+
+Port:TermG1  N__4 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__0 0 Num=2 Z=50 Ohm Noise=yes 
+C:C1  0 N__12 C=2.2 pF 
+R:R3  N__12 N__11 R=420 Ohm Noise=yes 

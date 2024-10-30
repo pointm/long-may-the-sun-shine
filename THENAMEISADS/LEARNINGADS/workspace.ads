@@ -1,4 +1,4 @@
-<ADSWorkspace Revision="18" Version="100">
+<ADSWorkspace Revision="20" Version="100">
     <Workspace Name="">
         <LibraryDefs Name="lib.defs" />
         <Library Name="ads_standard_layers" />
@@ -53,6 +53,8 @@
                 <Data_Display Name="STEP1_DCIV.dds" />
                 <Cell Name="LEARNINGADS_lib:STEP2_STABILITY" />
                 <Data_Display Name="STEP2_STABILITY.dds" />
+                <Cell Name="LEARNINGADS_lib:STEP3_STABILITY_NETWORK" />
+                <Data_Display Name="STEP3_STABILITY_NETWORK.dds" />
             </Folder>
         </Folder>
         <Dataset Name="STEP1_DCIV.ds" />
@@ -65,5 +67,10 @@
         <Data_Files Name="dc_annotation\%L%E%A%R%N%I%N%G%A%D%S_lib_%S%T%E%P2_%S%T%A%B%I%L%I%T%Y_schematic\annotation_map.xml" />
         <Data_Files Name="STEP2_STABILITY.ds" />
         <Data_Files Name="STEP2_STABILITY_data\logFile.txt" />
+        <Dataset Name="STEP3_STABILITY_NETWORK.ds" />
+        <Data_Files Name="dc_annotation\%L%E%A%R%N%I%N%G%A%D%S_lib_%S%T%E%P3_%S%T%A%B%I%L%I%T%Y_%N%E%T%W%O%R%K_schematic\annotation_1.xml" />
+        <Data_Files Name="dc_annotation\%L%E%A%R%N%I%N%G%A%D%S_lib_%S%T%E%P3_%S%T%A%B%I%L%I%T%Y_%N%E%T%W%O%R%K_schematic\annotation_map.xml" />
+        <Data_Files Name="STEP3_STABILITY_NETWORK.ds" />
+        <Data_Files Name="STEP3_STABILITY_NETWORK_data\logFile.txt" />
     </Workspace>
 </ADSWorkspace>

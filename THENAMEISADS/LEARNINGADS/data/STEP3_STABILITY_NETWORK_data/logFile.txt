@@ -7,9 +7,9 @@ Warning detected by hpeesofsim during netlist flattening.
 
 Pt DC convergence is used.
 
-SP SP1[1] <LEARNINGADS_lib:STEP2_STABILITY:schematic>   freq=(500 MHz->6 GHz)
+SP SP1[1] <LEARNINGADS_lib:STEP3_STABILITY_NETWORK:schematic>   freq=(500 MHz->6 GHz)
 
 
 Resource usage:
-  Total stopwatch time     =     0.31 seconds.
+  Total stopwatch time     =     0.33 seconds.
 

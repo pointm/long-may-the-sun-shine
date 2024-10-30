@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annotation_files Version="1.0" Time="周三 10月 30 16:06:57 2024" Simulator="hpeesofsim">
+<annotation_files Time="周三 10月 30 17:16:57 2024" Version="1.0" Simulator="hpeesofsim">
  <File name="annotation_1.xml">
   <Controller name="SP1">
    <P>freq: 5.0000000000000000e+08</P>
