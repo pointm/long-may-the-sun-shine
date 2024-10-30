@@ -29,3 +29,57 @@ ATF 21170是一个ADS自带管子模型库里面的管子，在现阶段，我�
 ![寻找管子的合适直流偏置点](/FIGURE/LNA设计教程/VGS扫参寻找直流偏置.png)
 
 ![偏置颜色的放置](/FIGURE/LNA设计教程/偏置颜色设置.png)
+
+## 2 进行大信号仿真
+
+### 组件搭建
+进行直流偏置电路的搭建，同时在直流偏置点位上放上隔离交流的电感线圈(在ADS里面是`DC_FEED`)，在交流信号电路上面放上隔离直流的电容(符号是`DC_BLOCK`)。
+
+加上偏置之后分别添加S参数组件、`Mu`组件和`MuPrime`组件，S参数是为了测量初步的增益，`Mu`是为了测量放大器的稳定性。
+
+这里相比于传统的理想仿真还加上了一个`Option`组件，是因为`IEEE`对于大信号分析有温度的要求(16.85℃)，这里是为了设置仿真温度的，如果没有这个组件的话会有一个警告，但是不太影响仿真的结果。
+
+![大信号仿真](/FIGURE/LNA设计教程/大信号仿真.png)
+
+组件设置方面，除了设置组件带宽之外，还记得打开S参数的`Calculate Noise`选项，不然的话不会计算噪声系数！
+
+![噪声计算设置](/FIGURE/LNA设计教程/噪声计算.png)
+
+一切设置完毕后，点击仿真查看相应的结果。
+
+### 结果查看
+#### 稳定性$\mu,\mu^\prime$
+在$\mu>1$的时候放大器的稳定性将达到绝对，ADS可以直接查看$\mu$系数。
+
+![Mu系数](/FIGURE/LNA设计教程/Mu系数.png)
+
+#### 增益
+使用S21查看基础的增益，现在暂时先不搞，
+
+![增益](/FIGURE/LNA设计教程/S21计算增益.png)
+
+![噪声系数](/FIGURE/LNA设计教程/2端口噪声系数.png)
+
+Practical Tip:
+Avoid any lossy components at the input side of LNA circuit as much as possible so that the noise figure is not distorted beyond a point
+
+实用提示：
+尽量避开LNA电路输入侧的任何损耗元件，使噪声系数不至于畸变到很奇怪的地方
+
+Practical Tips:
+Its a personal choice or sometimes depends on the situation on ground to decide which kind of stability
+operation one might decide to use. On a personal note, I prefer opting for unconditionally stable
+operation so that you have access to all the impedance points on the Smith Chart later for matching
+purposes as you will see in the tutorial. However if you decide to use conditional stability, that's fine too
+just that you need tomakesure thatyou don't present any impedance inside the unstableregion toyour
+LNA else it will induce the oscillations.
+
+这是个个人选择，有时还取决于地面情况，以决定使用哪种稳定操作。
+操作。就我个人而言，我更倾向于选择无条件稳定运行。
+这样您就可以访问史密斯图上的所有阻抗点，以便日后进行匹配。
+在教程中将会看到。不过，如果您决定使用有条件稳定，也没有问题
+只是您需要确保您的 LNA 不在不稳定区域内出现任何阻抗。
+否则会引起振荡。
+
+另外一种拒绝震荡的方法是使用FEED BACK（也就是在漏的输出部分和栅极的输入部分相连在MMIC中更加常用），这种方法也可以增加稳定性，多级设计中常用（听错了的可能性微存）
+
