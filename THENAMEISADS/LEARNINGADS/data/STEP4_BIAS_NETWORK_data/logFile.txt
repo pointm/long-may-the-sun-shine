@@ -1,0 +1,20 @@
+
+hpeesofsim (*) 530.shp Aug 11 2020, MINT version 5
+    (64-bit windows built: Wed Aug 12, 2020 02:42:05 +0000)
+
+
+SP SP1[1] <LEARNINGADS_lib:STEP4_BIAS_NETWORK:schematic>   freq=(100 MHz->6 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(0.045000) < MinRecommendValue(0.000051) OR UserValue > MaxRecommendValue(0.001524) for 'W' in `Gap1'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    Value(225.000000) <= MinLegalValue(0.100000) OR Value >= MaxLegalValue(10.000000) for 'W2/W1' in `Step1'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(5.500000) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee1'
+
+
+
+Resource usage:
+  Total stopwatch time     =     0.28 seconds.
+

@@ -74,12 +74,26 @@ purposes as you will see in the tutorial. However if you decide to use condition
 just that you need tomakesure thatyou don't present any impedance inside the unstableregion toyour
 LNA else it will induce the oscillations.
 
-这是个个人选择，有时还取决于地面情况，以决定使用哪种稳定操作。
-操作。就我个人而言，我更倾向于选择无条件稳定运行。
-这样您就可以访问史密斯图上的所有阻抗点，以便日后进行匹配。
-在教程中将会看到。不过，如果您决定使用有条件稳定，也没有问题
-只是您需要确保您的 LNA 不在不稳定区域内出现任何阻抗。
-否则会引起振荡。
+这是个个人选择，有时还取决于地面情况，以决定使用哪种稳定操作。操作。就我个人而言，我更倾向于选择无条件稳定运行。这样您就可以访问史密斯图上的所有阻抗点，以便日后进行匹配。在教程中将会看到。不过，如果您决定使用有条件稳定，也没有问题只是您需要确保您的 LNA 不在不稳定区域内出现任何阻抗。否则会引起振荡。
 
-另外一种拒绝震荡的方法是使用FEED BACK（也就是在漏的输出部分和栅极的输入部分相连在MMIC中更加常用），这种方法也可以增加稳定性，多级设计中常用（听错了的可能性微存）
+另外一种拒绝震荡的方法是使用FEED BACK（也就是在漏的输出部分和栅极的输入部分相连在MMIC中更加常用），因为这个方法添加了负反馈，这种方法也可以增加稳定性，但是会显著的降低管子的增益部分。多级设计中常用，多级设计可以补偿增益带来的损失（听错了的可能性微存）。
 
+BiasNetworkChoices:
+Use RFC(if design frequency is suitable), UseHigh Impedance Quarter Wavelength line
+
+使用RFC(如果设计频率合适)，使用高阻四分之一波长线
+
+Practical Tip: Make sure to model all possible discontinuities to account for their effects including the decoupling capacitors etc.
+
+实用提示：确保对所有可能的非连续性进行建模以考虑其影响，包括去耦电容等。
+
+解说：这段提示的意思是，模型中需要考虑所有可能存在的非连续性因素（如接口、电容、连接点等）对整体系统的影响。例如，去耦电容在电路中能消除电源噪声，因此它们的效果也应该在模型中加以考虑，以提高模型的准确性和可靠性。这是对设计和仿真工作的一个关键建议，确保所有组件的影响都被正确地纳入考虑范围。
+
+MU 的值只需要比1高一点点就算是完全稳定的状态了，不需要考虑到底要打多少，虽说理论上来说确实是越大越稳定。
+
+偏置电路的设计，还有四分之一延长线的设计。
+
+电容确实会带来焊盘，这个焊盘的不连续性也要考虑进去
+
+用插损S21还能看二次谐波的抑制特性
+MRSTUB(扇形线)能减少射频信号从直流偏置处流出(在实际的电路中表示为在谐振频率点处短路)，并且能够加宽电路的带宽。
