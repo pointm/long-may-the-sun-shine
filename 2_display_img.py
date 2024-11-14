@@ -39,7 +39,7 @@ while not crashed:  # 在游戏崩溃之前会一直跑循环
 
     gameDisplay.fill(white)
     car(x, y)
-    pg.display.update()
+    pg.display.update()  # 这一个语句非常重要如果不更新所有的窗口的话那么之前做过的所有的预渲染的事情将会全部木大！
     clock.tick(60)
 
 pg.quit()
