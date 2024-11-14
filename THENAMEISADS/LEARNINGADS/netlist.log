@@ -1,12 +1,54 @@
-; Top Design: "LEARNINGADS_lib:STEP4_BIAS_NETWORK:schematic"
+; Top Design: "LEARNINGADS_lib:STEP_5B_IMPEDANCE_MATCH_REQUREMENTS:schematic"
 ; Netlisted using Hierarchy Policy: "Standard"
 
-Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="LEARNINGADS_lib:STEP4_BIAS_NETWORK:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="LEARNINGADS_lib:STEP_5B_IMPEDANCE_MATCH_REQUREMENTS:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: LEARNINGADS_lib
+; Cell Name: LNA_MEASUREMENTS
+; View Name: schematic
+define LNA_MEASUREMENTS () 
+;parameters 
+aele Zopt1=zopt(Sopt,PortZ1);
+aele Mu1=mu(S);
+aele MuPrime1=mu_prime(S);
+aele MaxGain1=max_gain(S);
+aele PwrGain1=pwr_gain(S,PortZ1,PortZ2);
+aele Zin1=zin(S11,PortZ1);
+aele NsCircle1=ns_circle(nf2,NFmin,Sopt,Rn/50,51);
+aele GaCircle1=ga_circle(S,2,51);
+
+Options:Options1 Temp=16.85 Tnom=25 TopologyCheck=yes ForceS_Params=yes GiveAllWarnings=yes  \
+MaxWarnings=10 ForceM_Params=yes InitialGuessAnnotation=0 TopologyCheckMessages=no doDeltaAC=no  \
+ReduceSPortRatio=0.5 WarnSOA=yes MaxWarnSOA=5 Census=no MinNodalR=1e-2 Ohm  \
+LargeCapThreshold=1e-3 F EnableAssertChecks=no EnableSpareRemoval=no 
+
+end LNA_MEASUREMENTS
+
+; Library Name: LEARNINGADS_lib
+; Cell Name: STEP4_BIAS_NETWORK
+; View Name: schematic
+define STEP4_BIAS_NETWORK ( IP  OP  DC_FEED ) 
+;parameters 
 model MSub1 MSUB H=20 mil Er=3.66 Mur=1 Cond=5.8E7 Hu=1e+33 mm T=0.035 mm TanD=0.0001 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
-S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+
+w50=1.1
+wdc=0.2
+wpad_mil=45
+MLIN2:TL1  IP N__5 Subst="MSub1" W=w50 mm L=2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL2  N__6 OP Subst="MSub1" W=w50 mm L=2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee1  N__5 N__6 N__11 Subst="MSub1" W1=w50 mm W2=w50 mm W3=wdc mm 
+MLIN2:TL3  N__11 N__12 Subst="MSub1" W=wdc mm L=19.8 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MSTEP:Step1  N__12 DC_FEED Subst="MSub1" W1=wdc mm W2=wpad_mil mm 
+MLIN2:TL4  DC_FEED N__1 Subst="MSub1" W=wpad_mil mm L=0.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MGAP:Gap1  N__1 N__8 Subst="MSub1" W=wpad_mil mm S=0.5 mm 
+MLIN2:TL5  N__8 0 Subst="MSub1" W=wpad_mil mm L=0.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+C:C1  DC_FEED 0 C=470 pF 
+end STEP4_BIAS_NETWORK
+
+model MSub1 MSUB H=20 mil Er=3.66 Mur=1 Cond=5.8E7 Hu=1e+33 mm T=0.035 mm TanD=0.0001 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=yes SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
 SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
 
-SweepPlan: SP1_stim Start=0.1 GHz Stop=6 GHz Step=0.1 GHz 
+SweepPlan: SP1_stim Start=2.2 GHz Stop=2.6 GHz Step=0.01 GHz 
 
 OutputPlan:SP1_Output \
       Type="Output" \
@@ -21,14 +63,26 @@ Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
 w50=1.1
 wdc=0.2
 wpad_mil=45
-Port:TermG1  IP 0 Num=1 Z=50 Ohm Noise=yes 
-Port:TermG2  OP 0 Num=2 Z=50 Ohm Noise=yes 
-MLIN2:TL1  IP N__5 Subst="MSub1" W=w50 mm L=2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MLIN2:TL2  N__6 OP Subst="MSub1" W=w50 mm L=2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MTEE_ADS:Tee1  N__5 N__6 N__11 Subst="MSub1" W1=w50 mm W2=w50 mm W3=wdc mm 
-MLIN2:TL3  N__11 N__12 Subst="MSub1" W=wdc mm L=19.8 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MSTEP:Step1  N__12 DC_FEED Subst="MSub1" W1=wdc mm W2=wpad_mil mm 
-MLIN2:TL4  DC_FEED N__1 Subst="MSub1" W=wpad_mil mm L=0.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-MGAP:Gap1  N__1 N__8 Subst="MSub1" W=wpad_mil mm S=0.5 mm 
-MLIN2:TL5  N__8 0 Subst="MSub1" W=wpad_mil mm L=0.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
-C:C1  DC_FEED 0 C=470 pF 
+LNA_MEASUREMENTS:X1  
+#uselib "RfTransistorLibrary" , "pf_hp_ATF21170_19931015"
+pf_hp_ATF21170_19931015:A1  N__2 N__3 0 0 
+STEP4_BIAS_NETWORK:X2  N__2 N__24 N__4 
+R:R1  N__24 N__8 R=15 Ohm Noise=yes 
+Port:TermG1  N__12 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__8 0 Num=2 Z=50 Ohm Noise=yes 
+STEP4_BIAS_NETWORK:X3  N__12 N__11 N__10 
+V_Source:SRC1  N__10 0 Type="V_DC" Vdc=-0.4 V SaveCurrent=1 
+V_Source:SRC2  N__4 0 Type="V_DC" Vdc=3 V SaveCurrent=1 
+MLIN2:TL1  N__16 N__3 Subst="MSub1" W=w50 mm L=2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MTEE_ADS:Tee1  N__16 N__11 N__17 Subst="MSub1" W1=w50 mm W2=w50 mm W3=wdc mm 
+MLIN2:TL2  N__26 N__17 Subst="MSub1" W=wpad_mil mm L=0.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL3  N__18 N__21 Subst="MSub1" W=wpad_mil mm L=0.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL5  0 N__22 Subst="MSub1" W=wpad_mil mm L=0.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL4  N__25 N__18 Subst="MSub1" W=wpad_mil mm L=0.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MGAP:Gap1  N__21 N__26 Subst="MSub1" W=wpad_mil mm S=0.5 mm 
+MGAP:Gap2  N__22 N__25 Subst="MSub1" W=wpad_mil mm S=0.5 mm 
+R:R2  N__18 N__17 R=420 Ohm Noise=yes 
+C:C1  0 N__18 C=2.2 pF 
+MLIN2:TL6  N__5 N__24 Subst="MSub1" W=wpad_mil mm L=0.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MGAP:Gap3  N__15 N__5 Subst="MSub1" W=wpad_mil mm S=0.5 mm 
+MLIN2:TL7  N__8 N__15 Subst="MSub1" W=wpad_mil mm L=0.5 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 

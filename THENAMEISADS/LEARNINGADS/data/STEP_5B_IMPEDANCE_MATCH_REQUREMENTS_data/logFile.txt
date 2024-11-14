@@ -1,0 +1,39 @@
+
+hpeesofsim (*) 530.shp Aug 11 2020, MINT version 5
+    (64-bit windows built: Wed Aug 12, 2020 02:42:05 +0000)
+
+Warning detected by hpeesofsim during netlist flattening.
+    Resistor `A1.RSSP' is shorted.
+
+Pt DC convergence is used.
+
+SP SP1[1] <LEARNINGADS_lib:STEP_5B_IMPEDANCE_MATCH_REQUREMENTS:schematic>   freq=(2.2 GHz->2.6 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(0.045000) < MinRecommendValue(0.000051) OR UserValue > MaxRecommendValue(0.001524) for 'W' in `Gap3'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(0.045000) < MinRecommendValue(0.000051) OR UserValue > MaxRecommendValue(0.001524) for 'W' in `Gap2'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(0.045000) < MinRecommendValue(0.000051) OR UserValue > MaxRecommendValue(0.001524) for 'W' in `Gap1'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(0.045000) < MinRecommendValue(0.000051) OR UserValue > MaxRecommendValue(0.001524) for 'W' in `X3.Gap1'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(0.045000) < MinRecommendValue(0.000051) OR UserValue > MaxRecommendValue(0.001524) for 'W' in `X2.Gap1'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(5.500000) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee1'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(5.500000) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `X3.Tee1'
+
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(5.500000) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `X2.Tee1'
+
+
+
+Resource usage:
+  Total stopwatch time     =     0.33 seconds.
+
