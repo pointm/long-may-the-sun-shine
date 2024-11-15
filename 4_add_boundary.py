@@ -21,7 +21,7 @@ clock = pg.time.Clock()  # 实例化时钟类
 crashed = False  # 初始化游戏崩溃监视器
 carImg = pg.image.load(
     r"./asset/racecar.png"
-)  # 导入车辆的精将 将racecar.png 图像加载到的 carImg 变量中。
+)  # 导入车辆的精精灵 将racecar.png 图像加载到的 carImg 变量中。
 
 
 def car(x, y):  # 定义汽车函数，将车辆绘制到指定坐标的屏幕上
