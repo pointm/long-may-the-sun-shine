@@ -1,5 +1,5 @@
 import pygame as pg
-import time
+import time  # 用来等待用，主要是撞车之后的重启时候用来隔断一下
 
 pg.init()
 
