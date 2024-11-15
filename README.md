@@ -247,6 +247,6 @@ print(list2)  # 输出：[1, 2, 3, 4]
 app_proxy_address =127.0.0.1
 app_proxy_scheme =http
 app_proxy=true
-app_proxy_port=7890
+app_proxy_port=7897
 ```
 第一个和最后一个可以按照自己代理的端口进行自我设置。
