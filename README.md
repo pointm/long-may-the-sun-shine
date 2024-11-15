@@ -4,8 +4,8 @@
   注意代理后面的端口，应该于自己的梯子的代理端口一致，Windows11的具体的梯子的代理端口可以通过在设置页面搜索`代理服务器设置->点击手动设置代理的编辑按钮`查看：
   命令行输入以下命令：
   ```
-  git config --global http.proxy 127.0.0.1:7890
-  git config --global https.proxy 127.0.0.1:7890
+  git config --global http.proxy 127.0.0.1:7897
+  git config --global https.proxy 127.0.0.1:7897
   ```
 如果没有梯子的话就用这种方法，取消端口代理：
 - 取消端口代理
