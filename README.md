@@ -143,7 +143,7 @@ pip list
 [常用conda命令合集](https://zhuanlan.zhihu.com/p/363904808)
 ```python
 conda create -n environment_name python=3.11.5 #创建conda环境
-conda activate environment_name # 进入环境	
+activate environment_name # 进入环境	
 conda deactivate # 退出环境	
 conda remove -n yourname --all # 删除环境	 
 conda env list / conda info -e # 列出环境	
