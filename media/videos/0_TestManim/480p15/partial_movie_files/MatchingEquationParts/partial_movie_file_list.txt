@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/Pachirisu/Documents/GithubWorkSpace/long-may-the-sun-shine/media/videos/0_TestManim/480p15/partial_movie_files/MatchingEquationParts/1185818338_3649372508_4216234133.mp4'
+file 'file:C:/Users/Pachirisu/Documents/GithubWorkSpace/long-may-the-sun-shine/media/videos/0_TestManim/480p15/partial_movie_files/MatchingEquationParts/624642324_2077018068_4227516557.mp4'
+file 'file:C:/Users/Pachirisu/Documents/GithubWorkSpace/long-may-the-sun-shine/media/videos/0_TestManim/480p15/partial_movie_files/MatchingEquationParts/624642324_1959358871_4216765824.mp4'
+file 'file:C:/Users/Pachirisu/Documents/GithubWorkSpace/long-may-the-sun-shine/media/videos/0_TestManim/480p15/partial_movie_files/MatchingEquationParts/624642324_1815252958_574630669.mp4'
+file 'file:C:/Users/Pachirisu/Documents/GithubWorkSpace/long-may-the-sun-shine/media/videos/0_TestManim/480p15/partial_movie_files/MatchingEquationParts/624642324_1959358871_855720611.mp4'
